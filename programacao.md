@@ -10,4 +10,10 @@ description: Aqui você pode encontrar postagens sobre programação.
     E que possa fazer desta ferramenta para a construção de mudanças positivas na nossa realidade.
 
 ---
-
+<ul>
+  {% for post in my_collections.programacao.site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
