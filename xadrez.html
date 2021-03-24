@@ -3,10 +3,15 @@ layout: categories
 title: Xadrez
 description: Nesta parte se encontra os informações sobre este universo fantastico que é o xadrez. Espero que se divirta neste mundo louco e maravilhoso.
 ---
-<ul>
-  {% for post in site.xadrez %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+
+<nav class="menu">
+
+  <ul class="menu-list">
+    <h2 class="menu-label">Lista de Posts:</h2>
+    {% for post in site.xadrez %}
+      <li class="">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
