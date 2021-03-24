@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-{% include head.html %}
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
 
-<body>
-    <main>
-        {% include header.html %} {{content}} {% include footer.html %}
-    </main>
-</body>
+{{ content }}

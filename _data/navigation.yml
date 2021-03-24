@@ -2,3 +2,9 @@
   link: /
 - name: About
   link: /about.html
+- name: Programação
+  link: /programacao.html
+- name: Filosofia
+  link: /filosofia.html
+- name: Xadrez
+  link: /xadrez.html
