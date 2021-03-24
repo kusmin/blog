@@ -1,17 +1,13 @@
 ---
-layout: default
+layout: categories
 title: Programação
----
-
-
-<h1>{{ page.title }}</h1>
-
-<p> Aqui você pode encontrar postagens sobre programação. 
+description: Aqui você pode encontrar postagens sobre programação. 
     A maioria das postagens são feitas para mim mesmo, como forma de aprendizado, 
     contudo se algo puder lhe ajudar, vai cumprir um papel além daquele a qual foi planejada.
-</p>
+    <br><br>
 
-<p>
     Espero que se divirta com a programação assim como eu.
     E que possa fazer desta ferramenta para a construção de mudanças positivas na nossa realidade.
-</p>
+
+---
+
