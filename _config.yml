@@ -29,9 +29,16 @@ url: "http://www.blogdopensadormoderno.com.br/" # the base hostname & protocol f
 github_username:  kusmin
 collections_dir: my_collections
 collections:
-  my_collection:
+  filosofia:
     output: true
-    permalink: /:collection/:name
+    permalink: /filosofia/:title
+  programacao:
+    output: true
+    permalink: /programacao/:title
+  xadrez:
+    output: true
+    permalink: /xadrez/:title
+
 
 # Build settings
 theme: minima
