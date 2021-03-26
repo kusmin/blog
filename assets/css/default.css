@@ -2,32 +2,34 @@
         margin: 0 auto;
         padding: 0;
     }
-    
-     ::before,
-     ::after {
+
+    ::before,
+    ::after {
         box-sizing: border-box;
     }
+
     /* header */
-    
+
     .header>.section>.has-text-primary {
         display: flex;
         justify-content: space-between;
     }
-    
+
     .github {
         background-image: url(/assets/img/svg/iconmonstr-github-1.svg);
     }
-    
+
     .linkedin {
         background-image: url(/assets/img/svg/linkedin-svgrepo-com.svg);
         margin-left: 10px;
     }
+
     /* Footer */
-    
+
     .mp-footer>.column h3 {
         color: rgb(223, 196, 162);
     }
-    
+
     .header>.section>.has-text-primary>.redes-trabalho ul li a,
     .mp-footer>.column a {
         display: inline-block;
@@ -35,19 +37,19 @@
         width: 50px;
         height: 50px;
     }
-    
+
     .instagram {
         background-image: url(/assets/img/svg/instagram_108043.svg);
     }
-    
+
     .whatsapp {
         background-image: url(/assets/img/svg/whatsapp_108042.svg);
     }
-    
+
     .youtube {
         background-image: url(/assets/img/svg/youtube_108041.svg);
     }
-    
+
     .facebook {
         background-image: url(/assets/img/svg/facebook_108044.svg);
     }

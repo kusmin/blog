@@ -3,10 +3,14 @@
 
             <div class="hero">
                 <h1 class="title has-text-centered">{{page.title}}</h1>
-                <img src="{{page.image}}" alt="">
+                <!-- <figure class="image is-128x128"> -->
+                        <!-- <img src="{{page.image}}" alt=""> -->
+                <!-- </figure> -->
                 <br>
                 <p class="subtitle">{{page.description}}</p>
-                {{content}}
+                        <div class="hero-body is-small">
+                                {{content}}
+                        </div>
                 </div>
                 
         </section>
