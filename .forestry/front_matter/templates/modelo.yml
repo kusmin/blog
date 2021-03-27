@@ -5,7 +5,7 @@ fields:
 - type: text
   name: layout
   label: layout
-- type: date
+- type: text
   name: date
   label: date
 - type: text
@@ -18,4 +18,4 @@ fields:
   label: imagem
   description: eu
 pages:
-- my_collection/_programacao/teste.md
+- _programacao/teste.md
