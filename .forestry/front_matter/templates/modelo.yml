@@ -11,3 +11,9 @@ fields:
 - type: text
   name: description
   label: description
+- name: imagem
+  type: file
+  config:
+    maxSize: 64
+  label: imagem
+  description: eu
