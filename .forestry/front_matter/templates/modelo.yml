@@ -1,0 +1,13 @@
+---
+label: modelo
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: date
+  label: date
+- type: text
+  name: description
+  label: description
