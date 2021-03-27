@@ -5,17 +5,17 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: _filosofia
+  path: my_collections/_filosofia
   label: Filosofia
   create: all
   match: "**/*"
 - type: directory
-  path: _xadrez
+  path: my_collections/_xadrez
   label: Xadrez
   create: all
   match: "**/*"
 - type: directory
-  path: _programacao
+  path: my_collections/_programacao
   label: Programacao
   create: all
   match: "**/*"
