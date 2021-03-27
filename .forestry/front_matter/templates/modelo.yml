@@ -1,6 +1,7 @@
 ---
 label: modelo
 hide_body: false
+display_field: title
 fields:
 - type: text
   name: layout
@@ -18,9 +19,10 @@ fields:
   description: data de publicação
   config:
     required: false
-    date_format: 
+    date_format: ''
     time_format: 
     display_utc: false
+    export_format: YYYY-MM-DD h:mm A
 - type: text
   name: description
   label: description
@@ -36,3 +38,5 @@ fields:
     required: false
   label: categories
   description: categoria do post
+pages:
+- my_collections/_programacao/teste.md
