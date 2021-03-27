@@ -17,5 +17,3 @@ fields:
     maxSize: 64
   label: imagem
   description: eu
-pages:
-- my_collections/_programacao/teste.md
