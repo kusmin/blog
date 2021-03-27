@@ -18,4 +18,4 @@ fields:
   label: imagem
   description: eu
 pages:
-- _programacao/teste.md
+- my_collections/_programacao/teste.md
