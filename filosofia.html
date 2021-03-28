@@ -12,9 +12,9 @@ description: Aqui você pode encontrar conteúdos sobre filosofia,
   <ul class="menu-list">
     <h2 class="menu-label">Lista de Posts:</h2>
     {% for post in site.filosofia %}
-      <li class="">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <p>{{ post.description }}</p>
+      <li class="card">
+        <a href="{{ post.url }}" class="card-header-title">{{ post.title }}</a>
+        <p class="card-content">Descrição: {{ post.description }}</p>
       </li>
     {% endfor %}
   </ul>
