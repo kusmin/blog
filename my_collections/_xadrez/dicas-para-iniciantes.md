@@ -17,7 +17,7 @@ Estudar e aprender exige tempo, esforço, disciplina e principalmente amor e pai
 
 Como pode ver pelo gráfico a evolução é gradual, seja no que for e alcançar a maestria demanda a moeda mais escassa que temos que é o tempo.
 
-### Dicas de estudo de xadrez
+### **Dicas de estudo de xadrez**
 
 Como pode ver estudar para alcançar uma maestria demanda tempo e no xadrez isso não é diferente, então a primeira dica que dou é tenha paciência, os resultados viram com o tempo, se você manter a disciplina e um bom método de estudo.
 
