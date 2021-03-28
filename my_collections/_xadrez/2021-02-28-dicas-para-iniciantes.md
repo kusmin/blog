@@ -32,4 +32,6 @@ Agora vamos dar um foco maior na parte do método, e como estudar de forma efeti
 7. Tenha sempre um caderno a mão. Uma pratica que tenho é de sempre ter um lugar onde anotar as jogadas ou pensamentos que veem na minha cabeça, no somente no xadrez mas em outras áreas é uma boa pratica.
 8. Procure um clube de xadrez. Em praticamente todas as cidades que já morei tinham algum clube de xadrez ou se não algum grupo de pessoas que se encontravam para jogar. Procure algum clube na cidade e se afilie, além de ser uma excelente forma de treinar e praticar, é uma boa forma de socializar.
 
+<br><br>
+
 São algumas dicas que espero poder lhe ajudar a evoluir no xadrez. Uma ultima dica, aprecie seu estudo e seu esforço em aprender, por mais duro que seja aprender é uma atividade maravilhosa que traz recompensas a longo prazo.
