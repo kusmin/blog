@@ -21,7 +21,11 @@ Como pode ver pelo gráfico a evolução é gradual, seja no que for e alcançar
 
 Como pode ver estudar para alcançar uma maestria demanda tempo e no xadrez isso não é diferente, então a primeira dica que dou é tenha paciência, os resultados viram com o tempo, se você manter a disciplina e um bom método de estudo.
 
+<br>
+
 Agora vamos dar um foco maior na parte do método, e como estudar de forma efetiva.
+
+<br>
 
 1. Foque em estudar as partidas do melhores jogadores. Para melhorarmos nosso jogo temos que interagir com pessoas que jogam melhores do que a gente, nada melhor que os melhores dos melhores. Analise partida dos melhores jogadores de todos os tempos, dos mestres, daqueles que realmente passaram anos estudando e construindo sua maestria. Não despreze os mestres antigos pelos atuais, pois tem muitos conceitos que os mestres antigos desenvolveram que os mestres atuais também utilizam mas que não é tão visível. Estude partidas de Morphy, Capablanca, Steinitz e tantos outros mestres que deram fundamentos ao xadrez.
 2. Comece estudando finais. Sei que finais são chatos, tediosos e muito técnicos, mas são a parte mais importante para melhorarem no seu jogo que ajuda a entender todo o restante do xadrez, é nos finais por exemplo que você aprende o poder de cada peça. Caso desconsidere este conselho, e comece estudando aberturas, recomendo que estude estas vinculadas ao meio-jogo e final da abertura.
@@ -32,6 +36,6 @@ Agora vamos dar um foco maior na parte do método, e como estudar de forma efeti
 7. Tenha sempre um caderno a mão. Uma pratica que tenho é de sempre ter um lugar onde anotar as jogadas ou pensamentos que veem na minha cabeça, no somente no xadrez mas em outras áreas é uma boa pratica.
 8. Procure um clube de xadrez. Em praticamente todas as cidades que já morei tinham algum clube de xadrez ou se não algum grupo de pessoas que se encontravam para jogar. Procure algum clube na cidade e se afilie, além de ser uma excelente forma de treinar e praticar, é uma boa forma de socializar.
 
-<br><br>
+<br>
 
 São algumas dicas que espero poder lhe ajudar a evoluir no xadrez. Uma ultima dica, aprecie seu estudo e seu esforço em aprender, por mais duro que seja aprender é uma atividade maravilhosa que traz recompensas a longo prazo.
