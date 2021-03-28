@@ -53,3 +53,7 @@
     .facebook {
         background-image: url(/assets/img/svg/facebook_108044.svg);
     }
+
+    /* ajustando a img da area de publicação */
+
+    .container>.section>.hero>.hero-body img {}
