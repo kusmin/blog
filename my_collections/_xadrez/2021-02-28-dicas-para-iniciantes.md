@@ -25,8 +25,6 @@ Como pode ver pelo gráfico a evolução é gradual, seja no que for e alcançar
 
 Como pode ver estudar para alcançar uma maestria demanda tempo e no xadrez isso não é diferente, então a primeira dica que dou é tenha paciência, os resultados viram com o tempo, se você manter a disciplina e um bom método de estudo.
 
-<br>
-
 Agora vamos dar um foco maior na parte do método, e como estudar de forma efetiva.
 
 <br>
