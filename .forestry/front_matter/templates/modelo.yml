@@ -40,3 +40,4 @@ fields:
   description: categoria do post
 pages:
 - my_collections/_programacao/teste.md
+- my_collections/_xadrez/dicas-para-iniciantes.md
