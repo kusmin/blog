@@ -39,5 +39,6 @@ fields:
   label: categories
   description: categoria do post
 pages:
+- my_collections/_programacao/sites-dinamicos-x-sites-estaticos.md
 - my_collections/_programacao/sites-estaticos-jekyll.md
 - my_collections/_xadrez/2021-02-28-dicas-para-iniciantes.md
