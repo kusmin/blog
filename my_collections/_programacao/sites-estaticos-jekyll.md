@@ -60,6 +60,8 @@ felizmente é um erro fácil de corrigir, bastando adicionar essa dependência m
 
 Depois de instalada a dependência pode correr normalmente que o erro não mais acontecera, isto acontece devido que desde a versão 3.0.0 do Ruby esta dependência não veem por padrão dentro do Jekyll. Para maiores informações, consulte o link [https://github.com/jekyll/jekyll/issues/8523](https://github.com/jekyll/jekyll/issues/8523 "https://github.com/jekyll/jekyll/issues/8523").
 
+Pronto, você já tem sua primeira aplicação em Jekyll no próximo post, vamos adentrar mais a fundo sobre ele.
+
 ### Bibliografia
 
 <br>
