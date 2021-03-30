@@ -32,11 +32,15 @@ Depois de instalados os pre-requisitos, vamos instalar o Jekyll propriamente dit
 
     gem install jekyll bundler
 
-Instalado, vamos criar e rodar a aplicação básica, vá para uma pasta de sua preferencia e rode: 
+Instalado, vamos criar e rodar a aplicação básica, vá para uma pasta de sua preferencia e rode:
+
+<br>
 
     Jekyll new nome-da-sua-aplicação
     cd nome-da-sua-aplicacao
     bundle exec jekyll serve
+
+<br>
 
 Sua primeira aplicação em Jekyll estará rodando na porta [http://localhost:4000](http://localhost:4000/), basta abri-la em um navegador, e você vera a tela inicial do jekyll bem parecida com esta:
 
@@ -56,15 +60,19 @@ As versões mais novas do Ruby(depois da versão 3.0.0) não tem a dependência 
 
 felizmente é um erro fácil de corrigir, bastando adicionar essa dependência manualmente dentro da aplicação
 
+<br>
+
     bundle add webrick
+
+<br>
 
 Depois de instalada a dependência pode correr normalmente que o erro não mais acontecera, isto acontece devido que desde a versão 3.0.0 do Ruby esta dependência não veem por padrão dentro do Jekyll. Para maiores informações, consulte o link [https://github.com/jekyll/jekyll/issues/8523](https://github.com/jekyll/jekyll/issues/8523 "https://github.com/jekyll/jekyll/issues/8523").
 
 Pronto, você já tem sua primeira aplicação em Jekyll no próximo post, vamos adentrar mais a fundo sobre ele.
 
-### Bibliografia
-
 <br>
+
+### **Bibliografia**
 
 1. [https://jekyllrb.com/](https://jekyllrb.com/ "https://jekyllrb.com/")
 2. [https://rvm.io/](https://rvm.io/ "https://rvm.io/")
