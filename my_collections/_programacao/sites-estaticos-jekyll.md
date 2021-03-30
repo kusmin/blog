@@ -39,4 +39,4 @@ Instalado, vamos criar e rodar a aplicação básica, vá para uma pasta de sua 
     cd nome-da-sua-aplicacao
     bundle exec jekyll serve
 
-Sua primeira aplicação em Jekyll estará rodando 
+Sua primeira aplicação em Jekyll estará rodando na porta [http://localhost:4000](http://localhost:4000/), basta abri-la em um navegador
