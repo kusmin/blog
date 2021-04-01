@@ -57,3 +57,7 @@
     /* ajustando a img da area de publicação */
 
     .container>.section>.hero>.hero-body img {}
+
+    .container>.section>.hero>.hero-body p {
+        text-align: justify;
+    }
