@@ -38,6 +38,12 @@ fields:
     required: false
   label: categories
   description: categoria do post
+- name: comments
+  type: boolean
+  label: comments
+  description: Ativar o comentario dentro do post
+  hidden: true
+  default: true
 pages:
 - my_collections/_programacao/sites-dinamicos-x-sites-estaticos.md
 - my_collections/_programacao/sites-estaticos-jekyll.md
