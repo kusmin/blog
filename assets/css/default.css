@@ -61,3 +61,16 @@
     .container>.section>.hero>.hero-body p {
         text-align: justify;
     }
+
+    /* ajustar o menu para o responsivo */
+
+    @media screen and (max-width: 1024px) {
+        .menu-responsive {
+            background-color: #4a4a4a;
+
+        }
+
+        .navbar-menu {
+            background-color: #4a4a4a !important;
+        }
+    }
