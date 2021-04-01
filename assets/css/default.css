@@ -58,19 +58,10 @@
 
     .container>.section>.hero>.hero-body img {}
 
-    .container>.section>.hero>.hero-body p {
-        text-align: justify;
+    .section>.navbar>.menu-responsive {
+        margin: 10px;
     }
 
-    /* ajustar o menu para o responsivo */
-
-    @media (max-width: 1024px) {
-        .menu-responsive {
-            background-color: #4a4a4a;
-
-        }
-
-        .navbar-menu {
-            background-color: #4a4a4a !important;
-        }
+    .container>.section>.hero>.hero-body p {
+        text-align: justify;
     }
