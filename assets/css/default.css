@@ -64,7 +64,7 @@
 
     /* ajustar o menu para o responsivo */
 
-    @media screen and (max-width: 1024px) {
+    @media (max-width: 1024px) {
         .menu-responsive {
             background-color: #4a4a4a;
 
