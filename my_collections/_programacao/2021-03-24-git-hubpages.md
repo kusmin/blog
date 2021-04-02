@@ -4,6 +4,7 @@ title:  "Como utilizar o github pages"
 date:   2021-03-24 12:42:53 -0600
 description: Como utilizar o git hub pages, uma ferramenta pratica e acessível
 categories: github
+comments: true
 ---
 ![Git-hub pages](/assets/img/github-pages.jpeg)
 
