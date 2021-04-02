@@ -17,7 +17,7 @@ Hoje em dia, tem um material cada vez maior de estudo para programação, sejam 
 
 <br>
 
-Nada melhor que ter alguém em que se espelhar, e usar como exemplo para poder seguir os passos e conselhos. Através dos conhecimentos passados por alguém que tem mais experiencia do que você e já trabalha na área, lhe permite evitar certas armadilhas da programação e te ajudar em duvidas e problemas reais que aparecem durante o trajeto. 
+Nada melhor que ter alguém em que se espelhar, e usar como exemplo para poder seguir os passos e conselhos. Através dos conhecimentos passados por alguém que tem mais experiencia do que você e já trabalha na área, lhe permite evitar certas armadilhas da programação e te ajudar em duvidas e problemas reais que aparecem durante o trajeto.
 
 <br>
 
@@ -37,4 +37,4 @@ Na hora de escolher, de preferencia ao material de primeira mão, a tal famosa d
 
 <br>
 
-Além da documentação é importante entender os conceitos por trás daquela tecnologia que deseja aprender  
+Além da documentação é importante entender os conceitos por trás daquela tecnologia que deseja aprender. A motivação que levou a sua criação(qual problema foi criada para resolver), o contexto histórico na época que foi criada, os conceitos que ela engloba. São três premissas importantes, motivação, contexto histórico e conceitos. Por exemplo a linguagem Java foi criada 
