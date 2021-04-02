@@ -6,6 +6,7 @@ description: 'Neste post vamos ter um primeiro contato com o Jekyll, uma excelen
   ferramenta para a criação de sites estáticos. '
 imagem: "/uploads/jekyll.png"
 categories: Jekyll
+comments: true
 
 ---
 O Jekyll é um gerador de sites estáticos desenvolvido em cima da linguagem ruby, se você tiver um conhecimento sobre o funcionamento da linguagem esse tutorial vai ser bem simples, caso não tenha, não se preocupe vai ser igualmente simples. Ele tem uma integração natural com o github pages o que lhe torna uma ótima  opção para a criação do seu primeiro site.

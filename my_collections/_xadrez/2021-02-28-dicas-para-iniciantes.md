@@ -5,6 +5,8 @@ date: 2021-03-28 6:00 AM
 description: Algumas dicas para aqueles que estão começando a estudar xadrez
 imagem: "/uploads/xadrez.jpeg"
 categories: xadrez, dicas para iniciantes
+comments: true
+
 
 ---
 > ![](/uploads/xadrez.jpeg)

@@ -6,6 +6,7 @@ description: Uma comparação entre os dois tipos de sites estáticos e dinâmic
   vantagens e desvantagens na utilização de cada um
 imagem: "/uploads/sites-estaticos-e-dinamicos.png"
 categories: web
+comments: true
 
 ---
 De acordo com o [https://www.internetlivestats.com/](https://www.internetlivestats.com/ "https://www.internetlivestats.com/") tem mais de 1.847.469.200 sites na internet no dia que este post foi escrito 29 de março de 2021, deixei o numero assim nesse formato pelo seu tamanho impressionante, isso com quase 5 bilhões de usuários. Apesar dessa quantidade impressionante de site poderíamos dividi-los em dois grandes grupos: estáticos e dinâmicos.
