@@ -64,3 +64,7 @@ Que a aplicação vai estar rodando na porta 8080, no nosso caso vamos reproduzi
 Abrindo a janela do console particular do grails, agora sim vamos começar a brincar com as nossas buscar.
 
 ### Find
+
+<br>
+
+No sistema é bem simples composto de três classes de domínio, pessoa, tipo de pessoa e trabalho, elas podem ser encontradas dentro da pasta grails-app/domain.
