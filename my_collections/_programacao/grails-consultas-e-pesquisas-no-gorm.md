@@ -67,4 +67,20 @@ Abrindo a janela do console particular do grails, agora sim vamos começar a bri
 
 <br>
 
-Nosso sistema é bem simples composto de três classes de domínio, pessoa, tipo de pessoa e trabalho, elas podem ser encontradas dentro da pasta grails-app/domain. Vamos começar colocando alguns dados no banco de dados, você pode colocar direto pela aplicação ou pelo próprio console, aqui vamos ver como colocar pelo console
+Nosso sistema é bem simples composto de três classes de domínio, pessoa, tipo de pessoa e trabalho, elas podem ser encontradas dentro da pasta grails-app/domain. Vamos começar colocando alguns dados no banco de dados, você pode colocar direto pela aplicação ou pelo próprio console, aqui vamos ver como colocar pelo console...
+
+> import exemplo.buscar.*
+>
+> def pessoa = new Pessoa(nome: "Pedro", identidade: "948924892")
+
+<br>
+
+Com duas simples você inseriu seu primeiro registro no banco de dados. O 'import' é para importamos a aplicação para o console, a partir de agora, não voltarei a repita-la nos exemplos. Vamos utilizar um método de busca para encontra-lo:
+
+<br>
+
+> def pessoa = Pessoa.get(1)
+
+<br>
+
+Você deve ver na sua tela, algo igual a imagem a seguir
