@@ -83,4 +83,38 @@ Com duas simples você inseriu seu primeiro registro no banco de dados. O 'impor
 
 <br>
 
-Você deve ver na sua tela, algo igual a imagem a seguir
+Você deve ver na sua tela, algo igual a imagem a seguir![](/uploads/captura-de-tela-de-2021-04-12-21-57-53.png)
+
+Mostrando o nome que inserimos na posição um do banco de dados, podemos modificar o registro pelo método get também. Acrescentando o seguinte comando ao código...
+
+> pessoa.nome = "Renan"
+
+<br>  
+
+O registro que antes era "Pedro", foi alterado para "Renan", iremos utilizar agora outro método de pesquisa para visualizar essa alteração.
+
+> def pessoa =  Pessoa.read(1)
+
+<br>
+
+![](/uploads/captura-de-tela-de-2021-04-12-22-04-30.png)![](/uploads/captura-de-tela-de-2021-04-12-22-05-17.png)
+
+Vóila ! Agora podemos visualizar o registro com o nome "Renan", através do método read. Vamos troca-lo novamente ...
+
+> def pessoa = Pessoa.read(1)
+>
+> pessoa.nome = "Lucas"
+
+<br>
+
+![](/uploads/captura-de-tela-de-2021-04-12-22-07-51.png)![](/uploads/captura-de-tela-de-2021-04-12-22-08-46.png)
+
+Vamos pesquisar novamente o registro...
+
+> def pessoa = Pessoa.read(1)
+
+E vejam só...
+
+![](/uploads/captura-de-tela-de-2021-04-12-22-13-00.png)
+
+O nome não foi alterado, vamos entender melhor o que aconteceu. O GORM usa por trás dos panos o hibernate
