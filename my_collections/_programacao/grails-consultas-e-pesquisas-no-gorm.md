@@ -22,7 +22,7 @@ Caso queiram acompanhar os mesmos exemplos aqui descritos, segue o link do repos
 <br>
 
     cd docker/
-
+    
     docker-compose down && docker-compose build & docker-compose up
 
 <br>
@@ -67,4 +67,4 @@ Abrindo a janela do console particular do grails, agora sim vamos começar a bri
 
 <br>
 
-No sistema é bem simples composto de três classes de domínio, pessoa, tipo de pessoa e trabalho, elas podem ser encontradas dentro da pasta grails-app/domain.
+Nosso sistema é bem simples composto de três classes de domínio, pessoa, tipo de pessoa e trabalho, elas podem ser encontradas dentro da pasta grails-app/domain. Vamos começar colocando alguns dados no banco de dados, você pode colocar direto pela aplicação ou pelo próprio console, aqui vamos ver como colocar pelo console
