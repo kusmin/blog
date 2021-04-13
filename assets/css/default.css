@@ -63,5 +63,6 @@
     }
 
     .container>.section>.hero>.hero-body p {
+        margin-top: 15px;
         text-align: justify;
     }
