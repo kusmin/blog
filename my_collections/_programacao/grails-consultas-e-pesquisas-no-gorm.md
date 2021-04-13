@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: 'Grails: consultas e pesquisas no GORM'
-date: 2021-04-10 6:00 AM
+date: 2021-04-13 12:00 PM
 description: introdução a como são feitas pesquisas dentro do Grails
 imagem: "/uploads/gorm.jpeg"
 categories: grails, gorm
@@ -89,7 +89,7 @@ Mostrando o nome que inserimos na posição um do banco de dados, podemos modifi
 
 > pessoa.nome = "Renan"
 
-<br>  
+<br>
 
 O registro que antes era "Pedro", foi alterado para "Renan", iremos utilizar agora outro método de pesquisa para visualizar essa alteração.
 
@@ -117,4 +117,10 @@ E vejam só...
 
 ![](/uploads/captura-de-tela-de-2021-04-12-22-13-00.png)
 
-O nome não foi alterado, vamos entender melhor o que aconteceu. O GORM usa por trás dos panos o hibernate
+O nome não foi alterado, vamos entender melhor o que aconteceu. O GORM usa por trás dos panos o Hibernate, e este por sua vez se utiliza de algumas convenções e comportamentos padrão, o primeiro deles, é sobre a sessão. Ao terminar uma sessão o Hibernate, persiste todos os objetos que estiverem em memoria, ele se utiliza da _detecção de sujeira_ para verificar quais dados foram alterados e assim que termina a sessão, estes dados alterados são persistidos no banco de dados. É uma convenção que visa a economizar dados computacionais, uma vez que é a persistência  um processo caro, junta o máximo possível de dados para serem salvos juntos. 
+
+Nos exemplos que vimos o método get tem por padrão a detecção de sujeito ativa e o read não, podemos visualizar este comportamento utilizando o método **isDirty()**, que nós mostra se a detecção esta ativa ou não, vamos aos exemplos.
+
+![](/uploads/captura-de-tela-de-2021-04-13-07-37-42.png)
+
+Como pode ver pelo este exemplo, quando chamamos o método isDirty() no primeiro caso, sem nenhuma modificação foi retornado como falso, pois ainda nada havia sido alterado, entretanto quando o nome foi alterado o Hibernate detectou esta alteração e nos retornou como verdadeiro.
