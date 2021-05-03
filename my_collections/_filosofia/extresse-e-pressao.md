@@ -32,3 +32,5 @@ Aceite que a pressão é algo normal, e que serve sobretudo como forma de cresci
 Um passo importante é saber colocar limites. Todos temos limitações físicas, mentais, dentre tantas outras e é importante estabelecer os limites para que o desgaste aos poucos não leve a problemas maiores, principalmente relacionados a saúde. Saiba falar não e colocar limites para você. 
 
 ### Cuide de si
+
+Isto aqui vai em ponto direto com o tópico anterior
