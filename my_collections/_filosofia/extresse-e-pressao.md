@@ -33,4 +33,4 @@ Um passo importante é saber colocar limites. Todos temos limitações físicas,
 
 ### Cuide de si
 
-Isto aqui vai em ponto direto com o tópico anterior
+Isto aqui vai em ponto direto com o tópico anterior, além de estabelecer os limites, cuidar da saúde fica
