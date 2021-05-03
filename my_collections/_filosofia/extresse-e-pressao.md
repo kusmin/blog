@@ -6,7 +6,6 @@ date: 2021-05-03 6:00 AM
 description: Dicas de como lidar com situações de extresse e pressão
 imagem: "/uploads/homem-estressado-20171005-001.jpg"
 categories: extresse, qualidade de vida
-published: false
 
 ---
 É normal termos situações em que somos pressionados, e o estresse decorrente é consequência desta situação. E se não tomarmos cuidado, podemos acabar por descontar em outras pessoas ou até mesmo piorar a situação, agindo de forma impulsiva. Nestes casos alguns praticas podem ajudar.
@@ -33,4 +32,12 @@ Um passo importante é saber colocar limites. Todos temos limitações físicas,
 
 ### Cuide de si
 
-Isto aqui vai em ponto direto com o tópico anterior, além de estabelecer os limites, cuidar da saúde fica
+Isto aqui vai em ponto direto com o tópico anterior, além de estabelecer os limites, cuidar da saúde é um ponto importante, não se esquecer de se alimentar, se alimentar com qualidade, se hidratar, fazer atividades físicas e dormir bem. A atividade física principalmente tem esse papel de ser uma que condiciona a modificar as outras, você acaba dormindo melhor e procurando se alimentar melhor. Não vire vitima do sedentarismo.
+
+### Saiba parar
+
+Tem horas que não dá mais, e temos que saber parar. Aquela historia de saber seus limites, e parar é a melhor solução. Desistir é normal, não se sinto mal por isso, acontece e faz parte.
+
+### Procure ajuda
+
+Tem momentos que o melhor a se fazer é pedir ajuda. Tenha a humildade e o discernimento de reconhecer que precisa de ajuda. Existem profissionais que podem lhe ajudar a passar por este tipo de situação, não tenha preconceito ou se sinta envergonhado com isso.
