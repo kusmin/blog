@@ -23,4 +23,12 @@ Um erro comum que acabamos fazendo enquanto pessoas é descontar nossa raiva, fr
 
 Uma situação diferente é quando procuramos alguém para poder desabafar, isso se feito com cuidado é uma coisa boa, uma vez que podemos colocar para fora aquilo que anda nos afligindo sempre tomando cuidado também com o que vai ser dito, principalmente como vai ser dito.
 
- 
+### Aceite a pressão
+
+Aceite que a pressão é algo normal, e que serve sobretudo como forma de crescimento pessoal. Quando pressionados temos a oportunidade de aprender, de nos colocar a prova, de conhecer nossos limites e limitações. Sabe utiliza-la para aprender mais sobre si mesmo.
+
+### Estabeleça limites
+
+Um passo importante é saber colocar limites. Todos temos limitações físicas, mentais, dentre tantas outras e é importante estabelecer os limites para que o desgaste aos poucos não leve a problemas maiores, principalmente relacionados a saúde. Saiba falar não e colocar limites para você. 
+
+### Cuide de si
