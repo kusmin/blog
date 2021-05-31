@@ -583,7 +583,7 @@ JavaScript
     splice.apply(numbers, [3, 4].concat(ref = [-3, -4, -5, -6])), ref;
     
 
-Tudo em CoffeeScript é uma expressão, linguagem é baseada em expressão. Algumas coisas que seriam instruções em JavaScript são convertidas em expressões em CoffeeScript
+Tudo em CoffeeScript é uma expressão, linguagem é baseada em expressão. Algumas coisas que seriam instruções em JavaScript são convertidas em expressões em CoffeeScript.
 
     alert(
       try
