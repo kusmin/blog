@@ -353,3 +353,113 @@ JavaScript
       estudo = courses[i];
       estudo;
     }
+
+Um pouco mais útil é o exemplo abaixo
+
+    foods = ['broccoli', 'spinach', 'chocolate']
+    eat food for food in foods 
+
+JavaScript
+
+    var food, foods, i, len;
+    
+    foods = ['broccoli', 'spinach', 'chocolate'];
+    
+    for (i = 0, len = foods.length; i < len; i++) {
+      food = foods[i];
+      eat(food);
+    }
+
+Ele usa a palavra reservada when para ifs dentro do for, por exemplo:
+
+    foods = ['broccoli', 'spinach', 'chocolate']
+    eat food for food in foods when food != 'chocolate'
+
+JavaScript
+
+    for (l = 0, len2 = foods.length; l < len2; l++) {
+      food = foods[l];
+      if (food !== 'chocolate') {
+        eat(food);
+      }
+    }
+
+Caso não seja chocolate o food vai atribuir a eat o valor food
+
+Outro exemplo, seria 
+
+     list = ["Lucas","Renan", "Pedro"]
+    console.log name for name in list when name == "Renan"
+
+Vai percorrer toda a lista e imprimir no console o nome Renan, caso o tenha.
+
+    var i, len, list, name;
+    
+    list = ["Lucas", "Renan", "Pedro"];
+    
+    for (i = 0, len = list.length; i < len; i++) {
+      name = list[i];
+      if (name === "Renan") {
+        console.log(name);
+      }
+    }
+    
+
+Criando uma lista de 1 a 10 com o for
+
+    list = (num for num in [1..10])
+
+JavaScript
+
+    var list, num;
+    
+    list = (function() {
+      var i, results;
+      results = [];
+      for (num = i = 1; i <= 10; num = ++i) {
+        results.push(num);
+      }
+      return results;
+    })();
+
+Tirando o numero 5 da lista
+
+    list = (num for num in [1..10] when num isnt 5)
+
+JavaScript
+
+    var list, num;
+    
+    list = (function() {
+      var i, results;
+      results = [];
+      for (num = i = 1; i <= 10; num = ++i) {
+        if (num !== 5) {
+          results.push(num);
+        }
+      }
+      return results;
+    })();
+
+Para controlar o incremento dentro do for, utilize o by, por exemplo iterar todos os números pares exceto o valor 4:
+
+    countdown = (num for num in [0..10] by 2 when num isnt 4)  
+
+Resulta em 0, 2, 6, 8, 10
+
+JavaScript
+
+    var countdown, num;
+    
+    countdown = (function() {
+      var i, results;
+      results = [];
+      for (num = i = 0; i <= 10; num = i += 2) {
+        if (num !== 4) {
+          results.push(num);
+        }
+      }
+      return results;
+    })();
+
+Iteração sobre objetos é bem fácil 
