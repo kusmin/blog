@@ -528,3 +528,57 @@ JavaScript
         x--;
       }
     }
+
+Podemos usar os intervalo para extrair partes de matrizes, Com dois pontos(3..6) o intervalo é inclusivo com (3, 4, 5, 6) com três pontos (3...6), o intervalo exclui o ultimo numero.
+
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    
+    inclusivo   = numbers[3..5] # 4, 5, 6
+    
+    exclusivo = numbers[3...5] # 4,5 
+    
+    todosOsNumero = number[..]
+    
+    incioAoFimInclusivo  = numbers[..5] #1, 2, 3, 4, 5, 6
+    
+    incioAoFimExclusivo  = numbers[...5] #1, 2, 3, 4, 5
+    
+    cortadoApartir = numbers[5...] # 6, 7, 8, 9
+    
+    cortadoApartir = numbers[5..] #6,7,8, 9
+
+JavaScript
+
+    var cortadoApartir, exclusivo, incioAoFimExclusivo, incioAoFimInclusivo, inclusivo, numbers, todosOsNumero;
+    
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    
+    inclusivo = numbers.slice(3, 6);
+    
+    exclusivo = numbers.slice(3, 5);
+    
+    todosOsNumero = number.slice(0);
+    
+    incioAoFimInclusivo = numbers.slice(0, 6);
+    
+    incioAoFimExclusivo = numbers.slice(0, 5);
+    
+    cortadoApartir = numbers.slice(5);
+    
+    cortadoApartir = numbers.slice(5);
+
+Outra opção é interessante é usar como replace para substituir parte do array 
+
+    numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    
+    numbers[3..6] = [-3, -4, -5, -6]
+
+JavaScript
+
+    var numbers, ref,
+      splice = [].splice;
+    
+    numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    
+    splice.apply(numbers, [3, 4].concat(ref = [-3, -4, -5, -6])), ref;
+    
