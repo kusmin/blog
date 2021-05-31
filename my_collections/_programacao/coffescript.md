@@ -284,3 +284,72 @@ JavaScript
       ...user,
       status: 'incerto'
     };
+
+Splats em coffeeScript são parecidos com o de Java Script a diferença é que os 3 pontos (...) vão depois 
+
+    gold = silver = rest = "unknown"
+    
+    awardMedals = (first, second, others...) ->
+      gold   = first
+      silver = second
+      rest   = others
+    
+    contenders = [
+      "Michael Phelps"
+      "Liu Xiang"
+      "Yao Ming"
+      "Allyson Felix"
+      "Shawn Johnson"
+      "Roman Sebrle"
+      "Guo Jingjing"
+      "Tyson Gay"
+      "Asafa Powell"
+      "Usain Bolt"
+    ]
+    
+    awardMedals contenders...
+    
+    alert """
+    Gold: #{gold}
+    Silver: #{silver}
+    The Field: #{rest.join ', '}
+    """
+
+JavaScript
+
+    var awardMedals, contenders, gold, rest, silver;
+    
+    gold = silver = rest = "unknown";
+    
+    awardMedals = function(first, second, ...others) {
+      gold = first;
+      silver = second;
+      return rest = others;
+    };
+    
+    contenders = ["Michael Phelps", "Liu Xiang", "Yao Ming", "Allyson Felix", "Shawn Johnson", "Roman Sebrle", "Guo Jingjing", "Tyson Gay", "Asafa Powell", "Usain Bolt"];
+    
+    awardMedals(...contenders);
+    
+    alert(`Gold: ${gold}
+    Silver: ${silver}
+    The Field: ${rest.join(', ')}`);
+
+O loop for do CoffeeScript não é tão intuitivo em um primeiro momento, o próximo exemplo é bem simples.
+
+    courses = ['greens', 'caviar', 'truffles', 'roast', 'cake']
+    
+    estudo for estudo, i in courses 
+
+basicamente a cada loop dentro do array, ele muda o valor da variável estudo de acordo com o índice.
+
+JavaScript
+
+    var courses, estudo, i, j, len;
+    
+    courses = ['greens', 'caviar', 'truffles', 'roast', 'cake'];
+    
+    for (i = 0 ; i < courses.length; ++i) {
+      estudo = courses[i];
+      estudo;
+    }
