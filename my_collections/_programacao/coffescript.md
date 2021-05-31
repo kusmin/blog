@@ -158,3 +158,65 @@ Comentários de uma só linha são definidos pelo #, caso seja comentário de bl
     
     riqueza = (dinheiro) ->
       console.log dinheiro # estou rico!
+
+Mais sobre as declarações de variáveis, como dito antes o CoffeeScript, declara automaticamente as variáveis com var, não sendo possível declaração explicita, não podendo utilizar os nomes let, const ou var explicitamente(todas as variáveis são declaradas como tipo var implicitamente). Assim toma o cuidado quando o escopo das variáveis, entre global e local. No exemplo a seguir o resultado da variável inner global vai ser igual a 10 diferente do seu valor local dentro da função: 
+
+    outer = 1
+    changeNumbers = ->
+      inner = -1
+      outer = 10
+    inner = changeNumbers()
+
+Resultado em JavaScript
+
+    var changeNumbers, inner, outer;
+    
+    outer = 1;
+    
+    changeNumbers = function() {
+      var inner;
+      inner = -1;
+      return outer = 10;
+    };
+    
+    inner = changeNumbers();
+
+ Assim como nas funções as instruções if e else e delimitações de bloco são feitas por endentação, sem precisar de parenteses ou chaves.
+
+Não existe operador ternario explicito em Coffee, caso precise de um, utilize um if na mesma linha junto com um then e else.
+
+    mood = greatlyImproved if singing
+    
+    if happy and knowsIt
+      clapsHands()
+      chaChaCha()
+    else
+      showIt()
+    
+    date = if friday then sue else jill
+
+Resultado em JavaScript
+
+    var date, mood;
+    
+    if (singing) {
+      mood = greatlyImproved;
+    }
+    
+    if (happy && knowsIt) {
+      clapsHands();
+      chaChaCha();
+    } else {
+      showIt();
+    }
+    
+    date = friday ? sue : jill;
+
+Uma opção interessante que a linguagem oferece é o unless(muito utilizado no ruby), onde diferente do if que valida enquanto for verdadeiro, o unless valida enquanto for falso ele entra no bloco.
+
+    x = 5
+    
+    unless x == 5
+      console.log y = 10
+    else
+      console.log y = 12 
