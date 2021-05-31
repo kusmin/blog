@@ -123,3 +123,38 @@ JavaScript
     </strong>`;
 
 Listas e arrays são bem simples com o CoffeeScript, mas uma vez detalhe na endentação, que é similar com o YAML, como pode ser visto no exemplo:
+
+CoffeeScript
+
+    criancas =
+      menino:
+        nome: "Pedro"
+        anos:  11
+      menina:
+        nome: "Maria"
+        age:  9
+
+JavaScript
+
+    criancas = {
+      menino: {
+        nome: "Pedro",
+        anos: 11
+      },
+      menina: {
+        nome: "Maria",
+        age: 9
+      }
+    };
+
+No caso as virgulas ficam sendo opcionais e as chaves {} são definidas pela endentação.
+
+Comentários de uma só linha são definidos pelo #, caso seja comentário de bloco utilizar ###.
+
+    ###
+    Fortune Cookie Reader v1.0
+    Released under the MIT License
+    ###
+    
+    riqueza = (dinheiro) ->
+      console.log dinheiro # estou rico!
