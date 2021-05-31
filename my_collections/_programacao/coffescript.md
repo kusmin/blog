@@ -232,3 +232,55 @@ Resultado em JavaScript
     } else {
       console.log(y = 12);
     }
+
+Outro exemplo
+
+    x = 5
+    
+    unless x == 5
+      console.log "diferente de 5"
+    else unless x != 6
+      console.log "igual a 6"
+    else
+      console.log "outro"  
+    
+
+JavaScript
+
+    var x;
+    
+    x = 5;
+    
+    if (x !== 5) {
+      console.log("diferente de 5");
+    } else if (x === 6) {
+      console.log("igual a 6");
+    } else {
+      console.log("outro");
+    }
+
+O mode de propriedades de objetos é ainda mais simples que no JavaScript.
+
+    user =
+      name: 'Werner Heisenberg'
+      occupation: 'theoretical physicist'
+      age: 28
+      ativo: true
+    
+    currentUser = { user..., status: 'incerto' }
+
+JavaScript
+
+    var currentUser, user;
+    
+    user = {
+      name: 'Werner Heisenberg',
+      occupation: 'theoretical physicist',
+      age: 28,
+      ativo: true
+    };
+    
+    currentUser = {
+      ...user,
+      status: 'incerto'
+    };
