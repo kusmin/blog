@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: CoffeScript
 date: 2021-05-31 6:00 AM
-description: Uma forma mais simples de escrever javaScript
+description: Uma forma mais simplificada de escrever em javaScript
 imagem: "/uploads/cofeescript.png"
 categories: CofeeScript
 published: false
@@ -462,4 +462,69 @@ JavaScript
       return results;
     })();
 
-Iteração sobre objetos é bem fácil 
+Iteração sobre objetos é bem fácil, basta usar o of, como no exemplo a seguir:
+
+    yearsOld = max: 10, ida: 9, tim: 11
+    
+    ages = for child, age of yearsOld
+      "#{child} is #{age}"
+
+JavaScript
+
+    var age, ages, child, yearsOld;
+    
+    yearsOld = {
+      max: 10,
+      ida: 9,
+      tim: 11
+    };
+    
+    ages = (function() {
+      var results;
+      results = [];
+      for (child in yearsOld) {
+        age = yearsOld[child];
+        results.push(`${child} is ${age}`);
+      }
+      return results;
+    })();
+
+E outro loop que o CoffeeScript possui é o while e o until que é como um while negado
+
+     console.log "5 é maior que 4"  while 5 > 4
+     console.log "negando que 5 maior que 4, não entra neste loop" until 5 > 4
+
+JavaScript
+
+    while (5 > 4) {
+      console.log("5 é maior que 4");
+    }
+    
+    while (!(5 > 4)) {
+      console.log("negando que 5 maior que 4, não entra neste loop");
+    }
+
+Opção interessante utilizando o until é a seguinte
+
+    x = 10
+    until x < 4
+      if x 7
+        x - 2
+      else
+        x--
+
+Enquanto x não for menor que 4 ou seja enquanto x for maior que 4 vai ficar dentro do loop 
+
+JavaScript
+
+    var x;
+    
+    x = 10;
+    
+    while (!(x < 4)) {
+      if (x(7)) {
+        x - 2;
+      } else {
+        x--;
+      }
+    }
