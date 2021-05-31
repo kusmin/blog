@@ -584,3 +584,13 @@ JavaScript
     
 
 Tudo em CoffeeScript é uma expressão, linguagem é baseada em expressão. Algumas coisas que seriam instruções em JavaScript são convertidas em expressões em CoffeeScript
+
+    alert(
+      try
+        if x ==5
+            
+        else  
+          "Tamo ai"
+      catch error
+        "And the error is ... #{error}"
+    )
