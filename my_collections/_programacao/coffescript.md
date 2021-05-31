@@ -220,3 +220,15 @@ Uma opção interessante que a linguagem oferece é o unless(muito utilizado no 
       console.log y = 10
     else
       console.log y = 12 
+
+Resultado em JavaScript
+
+    var x, y;
+    
+    x = 5;
+    
+    if (x !== 5) {
+      console.log(y = 10);
+    } else {
+      console.log(y = 12);
+    }
