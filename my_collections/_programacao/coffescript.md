@@ -686,6 +686,45 @@ Iterando sobre o objeto yearsOld
       return results;
     })();
 
+Sutil diferença utilizando o in, agora ele itera sobre o array
+
+    yearsOld = max: 10, ida: 9, tim: 11
+    
+    ages = for child, age in yearsOld
+      "#{child} is #{age}"
+
+    var age, ages, child, yearsOld;
+    
+    yearsOld = {
+      max: 10,
+      ida: 9,
+      tim: 11
+    };
+    
+    ages = (function() {
+      var i, len, results;
+      results = [];
+      for (age = i = 0, len = yearsOld.length; i < len; age = ++i) {
+        child = yearsOld[age];
+        results.push(`${child} is ${age}`);
+      }
+      return results;
+    })();
+    
+
+Para expressões matemáticas temos o ** para exponenciação e // realiza divisão sem resto, para divisão normal utilizar /. O % resto da divisão funciona exatamente como em JavaScript e temos o %% que retorna o resto da divisão em modulo.
+
+    -7 % 5 == -2 # The remainder of 7 / 5
+    -7 %% 5 == 3 # n %% 5 is always between 0 and 4
+    
+    tabs.selectTabAtIndex((tabs.currentIndex - count) %% tabs.length)
+    
+    x = 8**8
+    z = 64//8
+    m = 64/8
+
+Tabela resumo
+
 | CoffeeScript | JavaScript |
 | --- | --- |
 | is | === |
