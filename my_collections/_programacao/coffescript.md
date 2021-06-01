@@ -661,6 +661,31 @@ Para boolenos além do true e do false, temos as opções on e yes para verdadei
 
 Em arrays utilizamos o in e em objetos o of especialmente para iterar sobre eles.
 
+    yearsOld = max: 10, ida: 9, tim: 11
+    
+    ages = for child, age of yearsOld
+      "#{child} is #{age}"
+
+Iterando sobre o objeto yearsOld
+
+     var age, ages, child, yearsOld;
+    
+    yearsOld = {
+      max: 10,
+      ida: 9,
+      tim: 11
+    };
+    
+    ages = (function() {
+      var results;
+      results = [];
+      for (child in yearsOld) {
+        age = yearsOld[child];
+        results.push(`${child} is ${age}`);
+      }
+      return results;
+    })();
+
 | CoffeeScript | JavaScript |
 | --- | --- |
 | is | === |
