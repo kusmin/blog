@@ -1058,3 +1058,48 @@ Por padrão o CoffeeScript não tem uma função geradora function*(){}, bastand
     };
 
 Assim como acontece com o yield na uma função assíncrona especifica, uma função assíncrona é uma que simplesmente tem o await 
+
+    # Your browser must support async/await and speech synthesis
+    # to run this example.
+    
+    sleep = (ms) ->
+      new Promise (resolve) ->
+        window.setTimeout resolve, ms
+    
+    say = (text) ->
+      window.speechSynthesis.cancel()
+      window.speechSynthesis.speak new SpeechSynthesisUtterance text
+    
+    countdown = (seconds) ->
+      for i in [seconds..1]
+        say i
+        await sleep 1000 # wait one second
+      say "Brasil!"
+    
+    countdown 3
+
+    // Your browser must support async/await and speech synthesis
+    // to run this example.
+    var countdown, say, sleep;
+    
+    sleep = function(ms) {
+      return new Promise(function(resolve) {
+        return window.setTimeout(resolve, ms);
+      });
+    };
+    
+    say = function(text) {
+      window.speechSynthesis.cancel();
+      return window.speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    };
+    
+    countdown = async function(seconds) {
+      var i, j, ref;
+      for (i = j = ref = seconds; (ref <= 1 ? j <= 1 : j >= 1); i = ref <= 1 ? ++j : --j) {
+        say(i);
+        await sleep(1000); // wait one second
+      }
+      return say("Brasil!");
+    };
+    
+    countdown(3);
