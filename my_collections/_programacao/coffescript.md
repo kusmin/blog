@@ -723,6 +723,21 @@ Para expressões matemáticas temos o ** para exponenciação e // realiza divis
     z = 64//8
     m = 64/8
 
+    var m, x, z,
+      modulo = function(a, b) { return (+a % (b = +b) + b) % b; };
+    
+    -7 % 5 === -2; // The remainder of 7 / 5
+    
+    modulo(-7, 5) === 3; // n %% 5 is always between 0 and 4
+    
+    tabs.selectTabAtIndex(modulo(tabs.currentIndex - count, tabs.length));
+    
+    x = 8 ** 8;
+    
+    z = Math.floor(64 / 8);
+    
+    m = 64 / 8;
+
 Tabela resumo
 
 | CoffeeScript | JavaScript |
