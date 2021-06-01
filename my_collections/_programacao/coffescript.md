@@ -1285,3 +1285,19 @@ No try/catch tem a mesma semântica do JavaScript podendo adicionalmente omitir 
     } finally {
       cleanUp();
     }
+
+Utiliza as comparações encadeadas do Python
+
+    idade = 35
+    
+    adulto = 60 > idade >  20
+    
+    alert adulto
+
+    var adulto, idade;
+    
+    idade = 35;
+    
+    adulto = (60 > idade && idade > 20);
+    
+    alert(adulto);
