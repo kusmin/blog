@@ -692,7 +692,7 @@ Sutil diferença utilizando o in, agora ele itera sobre o array
     
     ages = for child, age in yearsOld
       "#{child} is #{age}"
-
+    
     var age, ages, child, yearsOld;
     
     yearsOld = {
@@ -710,7 +710,6 @@ Sutil diferença utilizando o in, agora ele itera sobre o array
       }
       return results;
     })();
-    
 
 Para expressões matemáticas temos o ** para exponenciação e // realiza divisão sem resto, para divisão normal utilizar /. O % resto da divisão funciona exatamente como em JavaScript e temos o %% que retorna o resto da divisão em modulo.
 
@@ -722,7 +721,7 @@ Para expressões matemáticas temos o ** para exponenciação e // realiza divis
     x = 8**8
     z = 64//8
     m = 64/8
-
+    
     var m, x, z,
       modulo = function(a, b) { return (+a % (b = +b) + b) % b; };
     
@@ -770,7 +769,7 @@ Alguns exemplos
     winner = yes if pick in [47, 92, 13]
     
     print inspect "My name is #{@name}"
-
+    
     var volume, winner;
     
     if (ignition === true) {
@@ -799,7 +798,7 @@ Em CoffeeScript o operados ? retorna verdadeiro quando não é null, undefined o
 
     x = null
     x ?= caro
-
+    
     var x;
     
     x = null;
@@ -807,13 +806,12 @@ Em CoffeeScript o operados ? retorna verdadeiro quando não é null, undefined o
     if (x == null) {
       x = caro;
     }
-    
 
 Verifica se a variável x é nula se for atribui o valor de caro.
 
     bom
     cafe = bom ? ruim
-
+    
     bom;
     var cafe;
     
@@ -825,7 +823,7 @@ O CoffeeScript é inteligente o suficiente para perceber se a variável esta no 
     
     if major?
       signUpForClass 'Introduction to Wines'
-
+    
     var major;
     
     major = 'Computer Science';
@@ -833,3 +831,8 @@ O CoffeeScript é inteligente o suficiente para perceber se a variável esta no 
     if (major != null) {
       signUpForClass('Introduction to Wines');
     }
+
+Faz uma verificação completa se a variavel foi declarada ou não.
+
+    unless window?
+      environment = 'browser (probably)'
