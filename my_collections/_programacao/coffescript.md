@@ -1301,3 +1301,5 @@ Utiliza as comparações encadeadas do Python
     adulto = (60 > idade && idade > 20);
     
     alert(adulto);
+
+No regex é semelhante ao JavaScript mas delimitado pela barra /// 
