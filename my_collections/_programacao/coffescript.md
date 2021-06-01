@@ -1018,3 +1018,41 @@ Por padrão o CoffeeScript não tem uma função geradora function*(){}, bastand
     };
     
     window.ps || (window.ps = perfectSquares());
+
+    fibonacci = ->
+      [previous, current] = [1, 1]
+      loop
+        [previous, current] = [current, previous + current]
+        yield current
+      return
+    
+    getFibonacciNumbers = (length) ->
+      results = [1]
+      for n from fibonacci()
+        results.push n
+        break if results.length is length
+      results
+
+    var fibonacci, getFibonacciNumbers;
+    
+    fibonacci = function*() {
+      var current, previous;
+      [previous, current] = [1, 1];
+      while (true) {
+        [previous, current] = [current, previous + current];
+        yield current;
+      }
+    };
+    
+    getFibonacciNumbers = function(length) {
+      var n, ref, results;
+      results = [1];
+      ref = fibonacci();
+      for (n of ref) {
+        results.push(n);
+        if (results.length === length) {
+          break;
+        }
+      }
+      return results;
+    };
