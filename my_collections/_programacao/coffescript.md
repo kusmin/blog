@@ -5,7 +5,7 @@ title: CoffeScript
 date: 2021-05-31 6:00 AM
 description: Uma forma mais simplificada de escrever em javaScript
 imagem: "/uploads/cofeescript.png"
-categories: CofeeScript
+categories: CoffeeScript
 published: false
 
 ---
@@ -858,3 +858,17 @@ Além disso o operador ? pode ser utilizado junto com o operador . semelhante ao
 | a?.b ou a?\['b'\] | retorna a.bse aestá no escopo e a != null; por outro lado,undefined |
 | a?(b, c) ou a? b, c | retorna o resultado da chamada a(com argumentos be c) se aestiver no escopo e puder ser chamado ; por outro lado,undefined |
 | a ?= b | atribui o valor de bpara aif anão está no escopo ou if a == null; produz o novo valor dea |
+
+Encadeamento de funções.
+
+    $ 'body'
+    .click (e) ->
+      $ '.box'
+      .fadeIn 'fast'
+      .addClass 'show'
+    .css 'background', 'white'
+
+    $('body').click(function(e) {
+      return $('.box').fadeIn('fast').addClass('show');
+    }).css('background', 'white');
+    
