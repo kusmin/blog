@@ -942,3 +942,25 @@ A desestruturação pode ser usada em qualquer profundidade de array ou aninhame
         address: [city, street]
       }
     } = futurists);
+
+Desestruturação é útil na hora criar objetos por construtores, passando as propriedades de forma mais simples.
+
+    class Person
+      constructor: (options) ->
+        {@name, @age, @height = 'average'} = options
+    
+    tim = new Person name: 'Tim', age: 4
+
+    var Person, tim;
+    
+    Person = class Person {
+      constructor(options) {
+        ({name: this.name, age: this.age, height: this.height = 'average'} = options);
+      }
+    
+    };
+    
+    tim = new Person({
+      name: 'Tim',
+      age: 4
+    });
