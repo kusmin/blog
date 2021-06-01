@@ -836,3 +836,9 @@ Faz uma verificação completa se a variavel foi declarada ou não.
 
     unless window?
       environment = 'browser (probably)'
+
+    var environment;
+    
+    if (typeof window === "undefined" || window === null) {
+      environment = 'browser (probably)';
+    }
