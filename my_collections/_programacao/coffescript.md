@@ -874,3 +874,71 @@ Encadeamento de funções.
     
 
 Assim como o JavaScript o CoffeeScript tem sintaxe de atribuição de desestruturação.  Quando atribui uma matriz ou literal de um objeto a um valor, ele se divide em dois, atribuindo os valores a direita, as variáveis a esquerda. Um caso simples é de atribuição paralela.
+
+    theBait   = 1000
+    theSwitch = 0
+    
+    [theBait, theSwitch] = [theSwitch, theBait]
+
+    var theBait, theSwitch;
+    
+    theBait = 1000;
+    
+    theSwitch = 0;
+    
+    [theBait, theSwitch] = [theSwitch, theBait];
+
+Nesse caso se printar o valor de TheBait obteríamos o valor de 0 e TheSwitch o valor de 1000.
+
+Ou mesmo poderíamos fazer uma atribuição múltipla por função.
+
+    weatherReport = (location) ->
+      # Make an Ajax request to fetch the weather...
+      [location, 72, "BH"]
+    
+    [city, temp, forecast] = weatherReport "Berkeley, CA"
+
+    var city, forecast, temp, weatherReport;
+    
+    weatherReport = function(location) {
+      // Make an Ajax request to fetch the weather...
+      return [location, 72, "BH"];
+    };
+    
+    [city, temp, forecast] = weatherReport("Berkeley, CA");
+
+A desestruturação pode ser usada em qualquer profundidade de array ou aninhamento de objetos para ajudar a extrair propriedades.
+
+    futurists =
+      sculptor: "Umberto Boccioni"
+      painter:  "Vladimir Burliuk"
+      poet:
+        name:   "F.T. Marinetti"
+        address: [
+          "Via Roma 42R"
+          "Bellagio, Italy 22021"
+        ]
+    
+    {sculptor} = futurists
+    
+    {poet: {name, address: [city, street]}} = futurists
+
+    var city, futurists, name, sculptor, street;
+    
+    futurists = {
+      sculptor: "Umberto Boccioni",
+      painter: "Vladimir Burliuk",
+      poet: {
+        name: "F.T. Marinetti",
+        address: ["Via Roma 42R", "Bellagio, Italy 22021"]
+      }
+    };
+    
+    ({sculptor} = futurists);
+    
+    ({
+      poet: {
+        name,
+        address: [city, street]
+      }
+    } = futurists);
