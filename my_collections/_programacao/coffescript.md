@@ -589,4 +589,4 @@ Tudo em CoffeeScript é uma expressão, linguagem é baseada em expressão. Algu
         "And the error is ... #{error}"
     )
 
-A alguns comandos em JavaScript, entre eles break, continue e return que não podem ser convertidos dentros das expressões do CoffeeScript
+A alguns comandos em JavaScript, entre eles break, continue e return que não podem ser convertidos dentro das expressões do CoffeeScript
