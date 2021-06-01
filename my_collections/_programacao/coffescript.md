@@ -842,3 +842,11 @@ Faz uma verificação completa se a variavel foi declarada ou não.
     if (typeof window === "undefined" || window === null) {
       environment = 'browser (probably)';
     }
+
+Além disso o operador ? pode ser utilizado junto com o operador . semelhante ao que utilizado em Groovy para verificar referencias null ou undefined. Neste caso se todas as propriedades da cadeia que for verificada existirem vai ser obtido o resultado esperado caso contrario ele era retornar o undefined em vez do TypeError.
+
+    zip = lottery.drawWinner?().address?.zipcode
+
+    var ref, zip;
+    
+    zip = typeof lottery.drawWinner === "function" ? (ref = lottery.drawWinner().address) != null ? ref.zipcode : void 0 : void 0;
