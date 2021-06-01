@@ -872,3 +872,5 @@ Encadeamento de funções.
       return $('.box').fadeIn('fast').addClass('show');
     }).css('background', 'white');
     
+
+Assim como o JavaScript o CoffeeScript tem sintaxe de atribuição de desestruturação.  Quando atribui uma matriz ou literal de um objeto a um valor, ele se divide em dois, atribuindo os valores a direita, as variáveis a esquerda. Um caso simples é de atribuição paralela.
