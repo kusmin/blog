@@ -9,7 +9,9 @@ categories: CofeeScript
 published: false
 
 ---
-Parecido com as arrows-functions de javaScript.
+CoffeeScript é uma mistura de python com ruby, usado para compilar JavaScript.
+
+ Parecido com as arrows-functions de javaScript.
 
 Nas funções por padrão retorna como valor o ultimo comando.
 
