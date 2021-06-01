@@ -1103,3 +1103,45 @@ Assim como acontece com o yield na uma função assíncrona especifica, uma fun�
     };
     
     countdown(3);
+
+Classes tem muita semelhança com as classes em Ruby
+
+    class Pessoa
+      constructor: (@name, @trabalho) ->
+      
+      trabalho: (acao) ->
+        alert """#{@name} esta #{acao} como #{@trabalho}"""
+        
+    class Programador extends Pesssoa
+      trabalho: (idade) ->
+        super """digitando"""
+        alert """tem #{idade} de idade"""
+        
+    renan = new Programador "Renan", "Programador Junior"
+    renan.trabalho(45)
+
+    var Pessoa, Programador, renan;
+    
+    Pessoa = class Pessoa {
+      constructor(name, trabalho) {
+        this.name = name;
+        this.trabalho = trabalho;
+      }
+    
+      trabalho(acao) {
+        return alert(`${this.name} esta ${acao} como ${this.trabalho}`);
+      }
+    
+    };
+    
+    Programador = class Programador extends Pesssoa {
+      trabalho(idade) {
+        super.trabalho(`digitando`);
+        return alert(`tem ${idade} de idade`);
+      }
+    
+    };
+    
+    renan = new Programador("Renan", "Programador Junior");
+    
+    renan.trabalho(45);
