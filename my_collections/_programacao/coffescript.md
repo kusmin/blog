@@ -850,3 +850,11 @@ Além disso o operador ? pode ser utilizado junto com o operador . semelhante ao
     var ref, zip;
     
     zip = typeof lottery.drawWinner === "function" ? (ref = lottery.drawWinner().address) != null ? ref.zipcode : void 0 : void 0;
+
+| Exemplo | Definição |
+| --- | --- |
+| a? | testes que aestão no escopo ea != null |
+| a ? b | retorna ase aestá no escopo e a != null; por outro lado,b |
+| a?.b ou a?\['b'\] | retorna a.bse aestá no escopo e a != null; por outro lado,undefined |
+| a?(b, c) ou a? b, c | retorna o resultado da chamada a(com argumentos be c) se aestiver no escopo e puder ser chamado ; por outro lado,undefined |
+| a ?= b | atribui o valor de bpara aif anão está no escopo ou if a == null; produz o novo valor dea |
