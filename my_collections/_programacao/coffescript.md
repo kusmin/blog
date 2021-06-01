@@ -658,4 +658,22 @@ Para boolenos além do true e do false, temos as opções on e yes para verdadei
     z = true;
     
     m = true;
-    
+
+Em arrays utilizamos o in e em objetos o of especialmente para iterar sobre eles.
+
+| CoffeeScript | JavaScript |
+| --- | --- |
+| is | === |
+| isnt | !== |
+| not | ! |
+| and | && |
+| or | \|\| |
+| true, yes,on | true |
+| false, no,off | false |
+| @, this | this |
+| a in b | \[\].indexOf.call(b, a) >= 0 |
+| a of b | a in b |
+| for a from b | for (a of b) |
+| a ** b | a ** b |
+| a // b | Math.floor(a / b) |
+| a %% b | (a % b + b) % b |
