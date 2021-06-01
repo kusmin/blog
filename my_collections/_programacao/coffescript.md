@@ -6,7 +6,6 @@ date: 2021-05-31 6:00 AM
 description: Uma forma mais simplificada de escrever em javaScript
 imagem: "/uploads/cofeescript.png"
 categories: CoffeeScript
-published: false
 
 ---
 CoffeeScript é uma mistura de Python com Ruby, usado para compilar JavaScript.
