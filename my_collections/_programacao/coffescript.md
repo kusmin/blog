@@ -9,7 +9,6 @@ categories: CofeeScript
 published: false
 
 ---
-
 Parecido com as arrows-functions de javaScript.
 
 Nas funções por padrão retorna como valor o ultimo comando.
@@ -29,12 +28,11 @@ Tem a mesma função que o comando em JavaScript a seguir:
       return x;
     };
 
-Se quisesse retornar a string teria que alterar a função para: 
+Se quisesse retornar a string teria que alterar a função para:
 
     fill = (container, liquid = "coffee", x) ->
       valorCafe = x * x
       "Filling the #{container} with #{liquid}..."
-      
 
 Equivalente a função:
 
@@ -65,11 +63,11 @@ O resultado seria esse:
 
 Mais alguns detalhes:
 
-*  Não precisa declarar as variáveis, ele já faz isso para a gente;
+* Não precisa declarar as variáveis, ele já faz isso para a gente;
 * Ao passar variáveis(interpolação de strings) para a String usar a sintaxe #{};
 * Chamar a função é bem simples:
 
-    fill "cafe",35
+  fill "cafe",35
 
 No caso das Strings, quando são multi-linhas, ele ignora endentação, a não ser no caso que coloque uma barra invertida, nesse caso ele emenda o final de uma linha com o inicio da outra, segue os exemplos.
 
@@ -87,7 +85,6 @@ Resultado em javaScript:
     var mobyDick;
     
     mobyDick = "Call me Ishmael. Some years ago -- never mind how long precisely -- having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world...";
-    
 
 String multilinha com a barra invertida no final:
 
@@ -104,7 +101,7 @@ Resultado em javaScript:
     
     mobyDick = "Call me Ishmael. Some years ago --never mind how long precisely -- having littleor no money in my purse, and nothing particularto interest me on shore, I thought I would sailabout a little and see the watery part of theworld...";
 
-Caso queria uma String que contenha texto formatado ou que tenha sensibilidade a endentação, use """ ou '''. 
+Caso queria uma String que contenha texto formatado ou que tenha sensibilidade a endentação, use """ ou '''.
 
 CoffeeScript
 
@@ -159,7 +156,7 @@ Comentários de uma só linha são definidos pelo #, caso seja comentário de bl
     riqueza = (dinheiro) ->
       console.log dinheiro # estou rico!
 
-Mais sobre as declarações de variáveis, como dito antes o CoffeeScript, declara automaticamente as variáveis com var, não sendo possível declaração explicita, não podendo utilizar os nomes let, const ou var explicitamente(todas as variáveis são declaradas como tipo var implicitamente). Assim toma o cuidado quando o escopo das variáveis, entre global e local. No exemplo a seguir o resultado da variável inner global vai ser igual a 10 diferente do seu valor local dentro da função: 
+Mais sobre as declarações de variáveis, como dito antes o CoffeeScript, declara automaticamente as variáveis com var, não sendo possível declaração explicita, não podendo utilizar os nomes let, const ou var explicitamente(todas as variáveis são declaradas como tipo var implicitamente). Assim toma o cuidado quando o escopo das variáveis, entre global e local. No exemplo a seguir o resultado da variável inner global vai ser igual a 10 diferente do seu valor local dentro da função:
 
     outer = 1
     changeNumbers = ->
@@ -181,7 +178,7 @@ Resultado em JavaScript
     
     inner = changeNumbers();
 
- Assim como nas funções as instruções if e else e delimitações de bloco são feitas por endentação, sem precisar de parenteses ou chaves.
+Assim como nas funções as instruções if e else e delimitações de bloco são feitas por endentação, sem precisar de parenteses ou chaves.
 
 Não existe operador ternario explicito em Coffee, caso precise de um, utilize um if na mesma linha junto com um then e else.
 
@@ -243,7 +240,6 @@ Outro exemplo
       console.log "igual a 6"
     else
       console.log "outro"  
-    
 
 JavaScript
 
@@ -285,7 +281,7 @@ JavaScript
       status: 'incerto'
     };
 
-Splats em coffeeScript são parecidos com o de Java Script a diferença é que os 3 pontos (...) vão depois 
+Splats em coffeeScript são parecidos com o de Java Script a diferença é que os 3 pontos (...) vão depois
 
     gold = silver = rest = "unknown"
     
@@ -386,7 +382,7 @@ JavaScript
 
 Caso não seja chocolate o food vai atribuir a eat o valor food
 
-Outro exemplo, seria 
+Outro exemplo, seria
 
      list = ["Lucas","Renan", "Pedro"]
     console.log name for name in list when name == "Renan"
@@ -403,7 +399,6 @@ Vai percorrer toda a lista e imprimir no console o nome Renan, caso o tenha.
         console.log(name);
       }
     }
-    
 
 Criando uma lista de 1 a 10 com o for
 
@@ -513,7 +508,7 @@ Opção interessante utilizando o until é a seguinte
       else
         x--
 
-Enquanto x não for menor que 4 ou seja enquanto x for maior que 4 vai ficar dentro do loop 
+Enquanto x não for menor que 4 ou seja enquanto x for maior que 4 vai ficar dentro do loop
 
 JavaScript
 
@@ -567,7 +562,7 @@ JavaScript
     
     cortadoApartir = numbers.slice(5);
 
-Outra opção é interessante é usar como replace para substituir parte do array 
+Outra opção é interessante é usar como replace para substituir parte do array
 
     numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     
@@ -581,7 +576,6 @@ JavaScript
     numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     
     splice.apply(numbers, [3, 4].concat(ref = [-3, -4, -5, -6])), ref;
-    
 
 Tudo em CoffeeScript é uma expressão, linguagem é baseada em expressão. Algumas coisas que seriam instruções em JavaScript são convertidas em expressões em CoffeeScript.
 
@@ -594,3 +588,5 @@ Tudo em CoffeeScript é uma expressão, linguagem é baseada em expressão. Algu
       catch error
         "And the error is ... #{error}"
     )
+
+A alguns comandos em JavaScript, entre eles break, continue e return que não podem ser convertidos dentros das expressões do CoffeeScript
