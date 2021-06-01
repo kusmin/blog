@@ -983,3 +983,38 @@ JavaScript tem o problema do escopo da função this a um tempo dentro da lingua
         return this.customer.purchase(this.cart);
       });
     };
+
+Se tivesse sido usado a -> na chamada acima @customer teria se referido a uma propriedade indefinida "customer" dentro do escopo e tentar chama-la pelo purchase geraria uma exceção. 
+
+obs: Outra palavra reservada dentro do CoffeeScript é a palavra loop que simplesmente gera em JavaScript um while(true)
+
+    loop
+      x++
+
+    while (true) {
+      x++;
+    }
+
+Por padrão o CoffeeScript não tem uma função geradora function*(){}, bastando utilizar o yield que vira uma função geradora.
+
+    perfectSquares = ->
+      num = 0
+      loop
+        num += 1
+        yield num * num
+      return
+    
+    window.ps or= perfectSquares()
+
+    var perfectSquares;
+    
+    perfectSquares = function*() {
+      var num;
+      num = 0;
+      while (true) {
+        num += 1;
+        yield num * num;
+      }
+    };
+    
+    window.ps || (window.ps = perfectSquares());
