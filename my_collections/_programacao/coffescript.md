@@ -1056,3 +1056,5 @@ Por padrão o CoffeeScript não tem uma função geradora function*(){}, bastand
       }
       return results;
     };
+
+Assim como acontece com o yield na uma função assíncrona especifica, uma função assíncrona é uma que simplesmente tem o await 
