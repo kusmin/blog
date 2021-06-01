@@ -756,3 +756,41 @@ Tabela resumo
 | a ** b | a ** b |
 | a // b | Math.floor(a / b) |
 | a %% b | (a % b + b) % b |
+
+Alguns exemplos
+
+    launch() if ignition is on
+    
+    volume = 10 if band isnt SpinalTap
+    
+    letTheWildRumpusBegin() unless answer is no
+    
+    if car.speed < limit then accelerate()
+    
+    winner = yes if pick in [47, 92, 13]
+    
+    print inspect "My name is #{@name}"
+
+    var volume, winner;
+    
+    if (ignition === true) {
+      launch();
+    }
+    
+    if (band !== SpinalTap) {
+      volume = 10;
+    }
+    
+    if (answer !== false) {
+      letTheWildRumpusBegin();
+    }
+    
+    if (car.speed < limit) {
+      accelerate();
+    }
+    
+    if (pick === 47 || pick === 92 || pick === 13) {
+      winner = true;
+    }
+    
+    print(inspect(`My name is ${this.name}`));
