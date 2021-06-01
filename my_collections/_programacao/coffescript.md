@@ -613,3 +613,49 @@ Compilam a mesma coisa em JavaScript
     } else if (x !== 10) {
       "Tamo ai";
     }
+
+O not tem o mesmo valor que o !(negado).
+
+Pode usar para lógica  and que é igual ao && e or para ||
+
+    if x == 5 or x isnt 7
+      break  
+    else if x not 10 and y is 5
+      "Tamo ai"
+
+JavaScript
+
+    if (x === 5 || x !== 7) {
+      break;
+    } else if (x(!10 && y === 5)) {
+      "Tamo ai";
+    }
+
+Then pode ser usado para separar condições nas expressões, nas instruções while, if/else e switch/when. Then funciona "quase" como um ternário  
+
+    if name == "Renan" then sue else jill
+
+    if (name === "Renan") {
+      sue;
+    } else {
+      jill;
+    }
+
+Para boolenos além do true e do false, temos as opções on e yes para verdadeiro, e off e no para false.
+
+    x = no
+    y = off
+    
+    z= on
+    m= yes
+
+    var m, x, y, z;
+    
+    x = false;
+    
+    y = false;
+    
+    z = true;
+    
+    m = true;
+    
