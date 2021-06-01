@@ -591,4 +591,25 @@ Tudo em CoffeeScript é uma expressão, linguagem é baseada em expressão. Algu
         "And the error is ... #{error}"
     )
 
-A alguns comandos em JavaScript, entre eles break, continue e return que não podem ser convertidos dentro das expressões do CoffeeScript
+A alguns comandos em JavaScript, entre eles break, continue e return que não podem ser convertidos dentro das expressões do CoffeeScript.
+
+Algumas conversões boas interessantes dentro do CooffeeScript, ele compila o operador == em ===, assim como is também é compilado para ===, e o operador  !== em !==, assim como isnt também para !==
+
+    if x is 5
+       break  
+    else if x isnt 10
+       "Tamo ai"
+    
+
+    if x == 5
+      break  
+    else if x != 10
+      "Tamo ai"
+
+Compilam a mesma coisa em JavaScript
+
+    if (x === 5) {
+      break;
+    } else if (x !== 10) {
+      "Tamo ai";
+    }
