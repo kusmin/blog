@@ -11,7 +11,7 @@ published: false
 ---
 CoffeeScript é uma mistura de Python com Ruby, usado para compilar JavaScript.
 
-Parecido com as arrows-functions de javaScript.
+Escrita parecida com as arrows-functions de javaScript, porem compilam funções normais para compilar uma arrow-function tem que utilizar a =>
 
 Nas funções por padrão retorna como valor o ultimo comando.
 
@@ -964,3 +964,22 @@ Desestruturação é útil na hora criar objetos por construtores, passando as p
       name: 'Tim',
       age: 4
     });
+
+JavaScript tem o problema do escopo da função this a um tempo dentro da linguagem, com a função seta(=>), pode ser usada para vincular ao valor atual do this. Isto especialmente útil ao utilizar bibliotecas, baseadas em callback como JQuery.
+
+    Account = (customer, cart) ->
+      @customer = customer
+      @cart = cart
+    
+      $('.shopping_cart').on 'click', (event) =>
+        @customer.purchase @cart
+
+    var Account;
+    
+    Account = function(customer, cart) {
+      this.customer = customer;
+      this.cart = cart;
+      return $('.shopping_cart').on('click', (event) => {
+        return this.customer.purchase(this.cart);
+      });
+    };
