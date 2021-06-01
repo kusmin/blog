@@ -1145,3 +1145,143 @@ Classes tem muita semelhança com as classes em Ruby
     renan = new Programador("Renan", "Programador Junior");
     
     renan.trabalho(45);
+
+Para métodos estáticos incluir o @ frente do nome do metodo
+
+    class Teenager
+      @say: (speech) ->
+        words = speech.split ' '
+        fillers = ['uh', 'um', 'like', 'actually', 'so', 'maybe']
+        output = []
+        for word, index in words
+          output.push word
+          output.push fillers[Math.floor(Math.random() * fillers.length)] unless index is words.length - 1
+        output.join '-'
+
+Nesse método vai receber como parâmetro uma String, esta string vai ser armazenada palavra por palavra separada pelo espaço dentro da lista words. Depois essas variáveis do words  são unidas com uma variável escolhida aleatoriamente da lista fillers.
+
+No switch não precisa colocar o break no final ele ja faz isso para você em cada condição vai utilizar o when ajudado por um then e no valor default vira com else no final.
+
+    switch day
+      when "Mon" then go work
+      when "Tue" then go relax
+      when "Thu" then go iceFishing
+      when "Fri", "Sat"
+        if day is bingoDay
+          go bingo
+          go dancing
+      when "Sun" then go church
+      else go work
+
+    switch (dia) {
+      case "segunda":
+        bora(trabalhar);
+        break;
+      case "terça":
+        bora(trabalharmais);
+        break;
+      case "quarta":
+        bora(estudar);
+        break;
+      case "quinta":
+      case "sexta":
+        if (compeonato === true) {
+          bora(assistir);
+        } else {
+          bora("):");
+        }
+        break;
+      default:
+        bora(descansar);
+    }
+
+Pode chamar o switch atribuindo a uma variável também, caso não passe um parâmetro para o switch, por padrão ele vem como falso.
+
+    day = switch 
+      when "segunda" then bora trabalhar
+      when "terça" then bora trabalharmais
+      when "quarta"then bora estudar
+      when "quinta", "sexta"
+        if compeonato is true
+          bora assistir
+        else
+          bora "):"
+      else bora descansar  
+
+    var day;
+    
+    day = (function() {
+      switch (false) {
+        case !"segunda":
+          return bora(trabalhar);
+        case !"terça":
+          return bora(trabalharmais);
+        case !"quarta":
+          return bora(estudar);
+        case !"quinta":
+        case !"sexta":
+          if (compeonato === true) {
+            return bora(assistir);
+          } else {
+            return bora("):");
+          }
+          break;
+        default:
+          return bora(descansar);
+      }
+    })();
+
+E nesse caso ele nega os cases. Para não negar os cases basta colocar um parâmetro ou true mesmo
+
+    day = switch true
+      when "segunda" then bora trabalhar
+      when "terça" then bora trabalharmais
+      when "quarta"then bora estudar
+      when "quinta", "sexta"
+        if compeonato is true
+          bora assistir
+        else
+          bora "):"
+      else bora descansar  
+
+    var day;
+    
+    day = (function() {
+      switch (true) {
+        case "segunda":
+          return bora(trabalhar);
+        case "terça":
+          return bora(trabalharmais);
+        case "quarta":
+          return bora(estudar);
+        case "quinta":
+        case "sexta":
+          if (compeonato === true) {
+            return bora(assistir);
+          } else {
+            return bora("):");
+          }
+          break;
+        default:
+          return bora(descansar);
+      }
+    })();
+
+No try/catch tem a mesma semântica do JavaScript podendo adicionalmente omitir o parâmetro de erro no catch
+
+    try
+      allHellBreaksLoose()
+      catsAndDogsLivingTogether()
+    catch 
+      "deu ruim"
+    finally
+      cleanUp()
+
+    try {
+      allHellBreaksLoose();
+      catsAndDogsLivingTogether();
+    } catch (error) {
+      "deu ruim";
+    } finally {
+      cleanUp();
+    }
