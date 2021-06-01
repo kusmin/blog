@@ -11,7 +11,7 @@ published: false
 ---
 CoffeeScript é uma mistura de Python com Ruby, usado para compilar JavaScript.
 
- Parecido com as arrows-functions de javaScript.
+Parecido com as arrows-functions de javaScript.
 
 Nas funções por padrão retorna como valor o ultimo comando.
 
@@ -600,7 +600,7 @@ Algumas conversões boas interessantes dentro do CooffeeScript, ele compila o op
     else if x isnt 10
        "Tamo ai"
     
-
+    
     if x == 5
       break  
     else if x != 10
@@ -631,10 +631,10 @@ JavaScript
       "Tamo ai";
     }
 
-Then pode ser usado para separar condições nas expressões, nas instruções while, if/else e switch/when. Then funciona "quase" como um ternário  
+Then pode ser usado para separar condições nas expressões, nas instruções while, if/else e switch/when. Then funciona "quase" como um ternário
 
     if name == "Renan" then sue else jill
-
+    
     if (name === "Renan") {
       sue;
     } else {
@@ -648,7 +648,7 @@ Para boolenos além do true e do false, temos as opções on e yes para verdadei
     
     z= on
     m= yes
-
+    
     var m, x, y, z;
     
     x = false;
