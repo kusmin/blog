@@ -9,7 +9,7 @@ categories: CofeeScript
 published: false
 
 ---
-CoffeeScript é uma mistura de python com ruby, usado para compilar JavaScript.
+CoffeeScript é uma mistura de Python com Ruby, usado para compilar JavaScript.
 
  Parecido com as arrows-functions de javaScript.
 
