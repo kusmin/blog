@@ -794,3 +794,27 @@ Alguns exemplos
     }
     
     print(inspect(`My name is ${this.name}`));
+
+Em CoffeeScript o operados ? retorna verdadeiro quando não é null, undefined ou não foi declarado, análogo ao nil? em Ruby.
+
+    x = null
+    x ?= caro
+
+    var x;
+    
+    x = null;
+    
+    if (x == null) {
+      x = caro;
+    }
+    
+
+Verifica se a variável x é nula se for atribui o valor de caro.
+
+    bom
+    cafe = bom ? ruim
+
+    bom;
+    var cafe;
+    
+    cafe = typeof bom !== "undefined" && bom !== null ? bom : ruim;
