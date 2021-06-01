@@ -818,3 +818,18 @@ Verifica se a variável x é nula se for atribui o valor de caro.
     var cafe;
     
     cafe = typeof bom !== "undefined" && bom !== null ? bom : ruim;
+
+O CoffeeScript é inteligente o suficiente para perceber se a variável esta no escopo ou não.
+
+    major = 'Computer Science'
+    
+    if major?
+      signUpForClass 'Introduction to Wines'
+
+    var major;
+    
+    major = 'Computer Science';
+    
+    if (major != null) {
+      signUpForClass('Introduction to Wines');
+    }
