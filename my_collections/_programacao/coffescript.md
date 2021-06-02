@@ -11,6 +11,8 @@ published: false
 ---
 CoffeeScript é uma mistura de Python com Ruby, usado para compilar JavaScript.
 
+Ainda nele é como se tivesse escrevendo texto 
+
 Escrita parecida com as arrows-functions de javaScript, porem compilam funções normais para compilar uma arrow-function tem que utilizar a =>
 
 Nas funções por padrão retorna como valor o ultimo comando.
@@ -836,7 +838,7 @@ Faz uma verificação completa se a variavel foi declarada ou não.
 
     unless window?
       environment = 'browser (probably)'
-
+    
     var environment;
     
     if (typeof window === "undefined" || window === null) {
@@ -846,7 +848,7 @@ Faz uma verificação completa se a variavel foi declarada ou não.
 Além disso o operador ? pode ser utilizado junto com o operador . semelhante ao que utilizado em Groovy para verificar referencias null ou undefined. Neste caso se todas as propriedades da cadeia que for verificada existirem vai ser obtido o resultado esperado caso contrario ele era retornar o undefined em vez do TypeError.
 
     zip = lottery.drawWinner?().address?.zipcode
-
+    
     var ref, zip;
     
     zip = typeof lottery.drawWinner === "function" ? (ref = lottery.drawWinner().address) != null ? ref.zipcode : void 0 : void 0;
@@ -867,11 +869,10 @@ Encadeamento de funções.
       .fadeIn 'fast'
       .addClass 'show'
     .css 'background', 'white'
-
+    
     $('body').click(function(e) {
       return $('.box').fadeIn('fast').addClass('show');
     }).css('background', 'white');
-    
 
 Assim como o JavaScript o CoffeeScript tem sintaxe de atribuição de desestruturação.  Quando atribui uma matriz ou literal de um objeto a um valor, ele se divide em dois, atribuindo os valores a direita, as variáveis a esquerda. Um caso simples é de atribuição paralela.
 
@@ -879,7 +880,7 @@ Assim como o JavaScript o CoffeeScript tem sintaxe de atribuição de desestrutu
     theSwitch = 0
     
     [theBait, theSwitch] = [theSwitch, theBait]
-
+    
     var theBait, theSwitch;
     
     theBait = 1000;
@@ -897,7 +898,7 @@ Ou mesmo poderíamos fazer uma atribuição múltipla por função.
       [location, 72, "BH"]
     
     [city, temp, forecast] = weatherReport "Berkeley, CA"
-
+    
     var city, forecast, temp, weatherReport;
     
     weatherReport = function(location) {
@@ -922,7 +923,7 @@ A desestruturação pode ser usada em qualquer profundidade de array ou aninhame
     {sculptor} = futurists
     
     {poet: {name, address: [city, street]}} = futurists
-
+    
     var city, futurists, name, sculptor, street;
     
     futurists = {
@@ -950,7 +951,7 @@ Desestruturação é útil na hora criar objetos por construtores, passando as p
         {@name, @age, @height = 'average'} = options
     
     tim = new Person name: 'Tim', age: 4
-
+    
     var Person, tim;
     
     Person = class Person {
@@ -973,7 +974,7 @@ JavaScript tem o problema do escopo da função this a um tempo dentro da lingua
     
       $('.shopping_cart').on 'click', (event) =>
         @customer.purchase @cart
-
+    
     var Account;
     
     Account = function(customer, cart) {
@@ -984,13 +985,13 @@ JavaScript tem o problema do escopo da função this a um tempo dentro da lingua
       });
     };
 
-Se tivesse sido usado a -> na chamada acima @customer teria se referido a uma propriedade indefinida "customer" dentro do escopo e tentar chama-la pelo purchase geraria uma exceção. 
+Se tivesse sido usado a -> na chamada acima @customer teria se referido a uma propriedade indefinida "customer" dentro do escopo e tentar chama-la pelo purchase geraria uma exceção.
 
 obs: Outra palavra reservada dentro do CoffeeScript é a palavra loop que simplesmente gera em JavaScript um while(true)
 
     loop
       x++
-
+    
     while (true) {
       x++;
     }
@@ -1005,7 +1006,7 @@ Por padrão o CoffeeScript não tem uma função geradora function*(){}, bastand
       return
     
     window.ps or= perfectSquares()
-
+    
     var perfectSquares;
     
     perfectSquares = function*() {
@@ -1018,7 +1019,7 @@ Por padrão o CoffeeScript não tem uma função geradora function*(){}, bastand
     };
     
     window.ps || (window.ps = perfectSquares());
-
+    
     fibonacci = ->
       [previous, current] = [1, 1]
       loop
@@ -1032,7 +1033,7 @@ Por padrão o CoffeeScript não tem uma função geradora function*(){}, bastand
         results.push n
         break if results.length is length
       results
-
+    
     var fibonacci, getFibonacciNumbers;
     
     fibonacci = function*() {
@@ -1057,7 +1058,7 @@ Por padrão o CoffeeScript não tem uma função geradora function*(){}, bastand
       return results;
     };
 
-Assim como acontece com o yield na uma função assíncrona especifica, uma função assíncrona é uma que simplesmente tem o await 
+Assim como acontece com o yield na uma função assíncrona especifica, uma função assíncrona é uma que simplesmente tem o await
 
     # Your browser must support async/await and speech synthesis
     # to run this example.
@@ -1077,7 +1078,7 @@ Assim como acontece com o yield na uma função assíncrona especifica, uma fun�
       say "Brasil!"
     
     countdown 3
-
+    
     // Your browser must support async/await and speech synthesis
     // to run this example.
     var countdown, say, sleep;
@@ -1119,7 +1120,7 @@ Classes tem muita semelhança com as classes em Ruby
         
     renan = new Programador "Renan", "Programador Junior"
     renan.trabalho(45)
-
+    
     var Pessoa, Programador, renan;
     
     Pessoa = class Pessoa {
@@ -1172,7 +1173,7 @@ No switch não precisa colocar o break no final ele ja faz isso para você em ca
           go dancing
       when "Sun" then go church
       else go work
-
+    
     switch (dia) {
       case "segunda":
         bora(trabalhar);
@@ -1207,7 +1208,7 @@ Pode chamar o switch atribuindo a uma variável também, caso não passe um par�
         else
           bora "):"
       else bora descansar  
-
+    
     var day;
     
     day = (function() {
@@ -1243,7 +1244,7 @@ E nesse caso ele nega os cases. Para não negar os cases basta colocar um parâm
         else
           bora "):"
       else bora descansar  
-
+    
     var day;
     
     day = (function() {
@@ -1276,7 +1277,7 @@ No try/catch tem a mesma semântica do JavaScript podendo adicionalmente omitir 
       "deu ruim"
     finally
       cleanUp()
-
+    
     try {
       allHellBreaksLoose();
       catsAndDogsLivingTogether();
@@ -1293,7 +1294,7 @@ Utiliza as comparações encadeadas do Python
     adulto = 60 > idade >  20
     
     alert adulto
-
+    
     var adulto, idade;
     
     idade = 35;
@@ -1302,4 +1303,26 @@ Utiliza as comparações encadeadas do Python
     
     alert(adulto);
 
-No regex é semelhante ao JavaScript mas delimitado pela barra /// 
+No regex é semelhante ao JavaScript mas delimitado pela barra ///
+
+Provavelmente nunca vai precisar usar, mas caso precise é possível passar trechos de JavaScript via CoffeeScript para isso basta usar crase (\`\`).
+
+    `var hi = function() {
+      return [document.title, "Olá JavaScript"].join(": ");
+    }`
+
+    var hi = function() {
+      return [document.title, "Olá JavaScript"].join(": ");
+    };
+
+Também pode ser usado crases triplas para blocos de JavaScript(não que vá precisar usar).
+
+    ```
+    function time() {
+      return `The time is ${new Date().toLocaleTimeString()}`;
+    }
+    ```
+
+    function time() {
+      return `The time is ${new Date().toLocaleTimeString()}`;
+    }
