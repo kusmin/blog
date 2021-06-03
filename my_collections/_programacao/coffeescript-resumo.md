@@ -9,3 +9,4 @@ categories: CofeeScript
 published: false
 
 ---
+CoffeeScript é uma mistura bem gostosa de Ruby e Python. Tenha 
