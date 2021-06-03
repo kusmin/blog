@@ -9,4 +9,8 @@ categories: CofeeScript
 published: false
 
 ---
-CoffeeScript é uma mistura bem gostosa de Ruby e Python. Tenha 
+CoffeeScript é uma mistura bem gostosa de Ruby e Python. Nele lhe permite escrever codigos de uma forma quase discursiva. Por exemplo:
+
+> If x is yes
+>
+>   console.log x
