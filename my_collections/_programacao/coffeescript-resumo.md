@@ -38,3 +38,41 @@ Você esperaria que o console.log x+1 estaria executando dentro do else, mas o q
     }
     
     console.log(x + 1);
+
+Dentro dessas possibilidades de escrever códigos mais discursivos e próximos da linguagem humana, o CoffeeScript utiliza o 'yes', 'on' e o 'true' para casos afirmativos e o 'no', 'off' e o 'false' para casos negativos, um recurso a mais na hora de  fazer suas estruturas condicionais e booleanos.
+
+E os recursos adicionais do CoffeeScript não param por ai, um exemplo vem logo abaixo:
+
+    v=[
+      "carro"
+      "vaca"
+      "mula"
+      ]
+    
+    for valor, chave in v
+      alert valor
+    
+    if x isnt 5 or x isnt 8
+      console.log x
+    else if x not true
+      console.log z
+    
+    unless x is 5 and x is 8
+      console.log x++
+      
+    while x != 5
+      console.log y
+    
+    until x == 5
+      console.log y
+      
+    #comentario de linha
+    
+    ###
+      Comentario de bloco
+    ###
+        
+
+Primeiro detalhe que você pode observar que ao declarar o array v, não é necessário colocar virgula caso utilize a endentação, e coloque um valor embaixo do outro.
+
+Outro detalhe é o foreach no formato CoffeeScript
