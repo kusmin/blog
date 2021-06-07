@@ -71,8 +71,24 @@ E os recursos adicionais do CoffeeScript não param por ai, um exemplo vem logo 
     ###
       Comentario de bloco
     ###
-        
 
 Primeiro detalhe que você pode observar que ao declarar o array v, não é necessário colocar virgula caso utilize a endentação, e coloque um valor embaixo do outro.
 
-Outro detalhe é o foreach no formato CoffeeScript
+Outro detalhe é o foreach no formato CoffeeScript, tem que passar a chave e o valor, onde o resultado vai ser algo assim em JavaScript.
+
+    for (chave = i = 0, len = v.length; i < len; chave = ++i) {
+      valor = v[chave];
+      alert(valor);
+    }
+
+Uma forma mais simplificada seria assim:
+
+    for valor in v
+      alert valor
+
+Que quando compilado para JavaScript resultaria em:
+
+    for (i = 0, len = v.length; i < len; i++) {
+      valor = v[i];
+      alert(valor);
+    }
