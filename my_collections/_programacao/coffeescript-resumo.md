@@ -117,3 +117,15 @@ Uma maneira ainda mais fácil de fazer um 'if negado' seria utilizado o 'unless'
       
     if !(x is 5 and x is 8)
       console.log x++
+
+No caso ambos vão compilar o mesmo resultado em JavaScript, sendo que usando o unless é bem mais intuitivo de escrever.
+
+    if (!(x === 5 && x === 8)) {
+      console.log(x++);
+    }
+    
+    if (!(x === 5 && x === 8)) {
+      console.log(x++);
+    }
+
+Outro re
