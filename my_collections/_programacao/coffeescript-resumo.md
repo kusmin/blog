@@ -92,3 +92,20 @@ Que quando compilado para JavaScript resultaria em:
       valor = v[i];
       alert(valor);
     }
+
+Bem simples, né ?
+
+Lembram quando disse mais acima que os códigos em CoffeeScript são praticamente discursivos... Vamos olhar mais detalhadamente o caso do if. 
+
+    if x isnt 5 or x isnt 8
+      console.log x
+    else if x not true
+      console.log z
+
+O código seria lido desta maneira "Se x não é 5 ou x não é 8, mostre o valor de x,  senão se x não for verdadeiro mostre z". Neste trecho vemos que o OU, que geralmente é escrito como || também pode ser escrito como 'or', assim como também temos o 'and'. O trecho de exemplo, ficaria assim em JavaScript:
+
+    if (x !== 5 || x !== 8) {
+      console.log(x);
+    } else if (x(!true)) {
+      console.log(z);
+    }
