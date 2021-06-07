@@ -109,3 +109,11 @@ O código seria lido desta maneira "Se x não é 5 ou x não é 8, mostre o valo
     } else if (x(!true)) {
       console.log(z);
     }
+
+Uma maneira ainda mais fácil de fazer um 'if negado' seria utilizado o 'unless' recurso emprestado do Ruby. Enquanto no if seria faça algo se for verdade, no unless seria faça algo se não for verdade.
+
+    unless x is 5 and x is 8
+      console.log x++
+      
+    if !(x is 5 and x is 8)
+      console.log x++
