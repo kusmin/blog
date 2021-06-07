@@ -128,4 +128,31 @@ No caso ambos vão compilar o mesmo resultado em JavaScript, sendo que usando o 
       console.log(x++);
     }
 
-Outro re
+Outro recurso bem interessante é o 'until',  outro recurso importado do Ruby, ele bem parecido com o 'unless' mas desta vez é um 'while negado', por exemplo:
+
+    while x != 5
+      console.log y
+    
+    until x == 5
+      console.log y
+
+Ambas as formas seriam compiladas para o JavaScript:
+
+    while (x !== 5) {
+      console.log(y);
+    }
+
+Um recurso interessante é utilizar o 'range' em CoffeeScript para fazer suas iterações, por exemplo. Veja uma forma interessante de iterar sobre a lista produzida pelo range.
+
+    numeros = [0..9]
+    
+    alert n for n in numeros
+
+Diminuindo bem a quantidade de codigo que ficaria em JavaScript para o mesmo resultado:
+
+    numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    
+    for (j = 0, len1 = numeros.length; j < len1; j++) {
+      n = numeros[j];
+      alert(n);
+    }
