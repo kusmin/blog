@@ -46,6 +46,7 @@ fields:
   default: true
 pages:
 - my_collections/_filosofia/3-habitos-simples-para-um-melhor-convivio-social.md
+- my_collections/_filosofia/dicas-de-leitura-orgulho-e-preconceito.md
 - my_collections/_filosofia/extresse-e-pressao.md
 - my_collections/_programacao/chart.js.md
 - my_collections/_programacao/coffeescript-resumo.md
