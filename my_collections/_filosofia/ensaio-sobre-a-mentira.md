@@ -9,3 +9,4 @@ categories: 'reflexões '
 published: false
 
 ---
+Quando vi essa imagem pesquisando no nosso amigo de todas as pessoas necessitadas chamado google, refleti um tempo sobre ela. Como pode ver pela imagem cada uma delas leva a caminhos totalmente diferentes .... e vão chegar a destinos totalmente diferentes 
