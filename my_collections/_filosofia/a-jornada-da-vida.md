@@ -6,7 +6,6 @@ date: 2021-08-03 6:00 AM
 description: Uma analise sobre a jornada da vida
 imagem: "/uploads/a-vida-nao-e-uma-jornada.jpeg"
 categories: auto-ajuda, vida
-published: false
 
 ---
 ![](/uploads/a-vida-nao-e-uma-jornada.jpeg)
