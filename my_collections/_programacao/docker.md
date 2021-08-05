@@ -11,4 +11,4 @@ published: false
 ---
 ![](/uploads/docker.png)
 
-O docker é nada mais que uma plataforma 
+O docker é uma ferramenta importante para o arsenal tecnológico. É uma plataforma para criação, execução e publicação de contêineres. 
