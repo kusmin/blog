@@ -6,7 +6,6 @@ date: 2021-08-05 6:00 AM
 description: Mentoria o que é ? Vale a pena ?
 imagem: "/uploads/mentoria.jpeg"
 categories: auto-conhecimento, auto-ajuda
-published: false
 
 ---
 ![](/uploads/mentoria.jpeg)
@@ -17,4 +16,4 @@ A mentoria vai muito além do popular coaching que temos atualmente, na verdade 
 
 Acredito que historicamente, o período que a mentoria teve maior destaque foi durante a idade media em que havia os mestres e aprendizes. Estes pagavam um pequeno valor aos aprendizes por seu serviço, além de passar o conhecimento mantendo a qualidade do produto e os conhecimentos requeridos na profissão. Com o surgimento das industria em que a expertise técnica acabou sendo regalada ao segundo plano, o sistema de mestres e aprendizes acabou.
 
-Hoje estamos vendo ressurgir este sistema com uma nova roupagem 
+Hoje estamos vendo ressurgir este sistema com uma nova roupagem, com acesso a internet podemos definir quais pessoas serão nossos mentores que padrões seguir e para onde ir. Apesar de a mentoria com uma pessoa mais próxima e que possa lhe ajudar seja ainda mais interessante. Visto que pode ir além de ser um exemplo, e ser realmente um suporte natural para onde deseja se desenvolver.
