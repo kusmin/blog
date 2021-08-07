@@ -6,7 +6,6 @@ date: 2021-08-07 6:00 AM
 description: Recomendação de leitura para o fim de semana
 imagem: "/uploads/midset.jpeg"
 categories: auto-conhecimento, auto-ajuda
-published: false
 
 ---
 ![](/uploads/midset.jpeg)
