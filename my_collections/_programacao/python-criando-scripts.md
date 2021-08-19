@@ -20,7 +20,7 @@ Na maioria das vezes o python já vem por padrão instalando, alguma versão, pa
 
     which python
 
-Caso tenha instalado deve retornar: 
+Caso tenha instalado deve retornar:
 
     /usr/bin/python
 
