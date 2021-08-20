@@ -6,7 +6,6 @@ date:
 description: ''
 imagem: ''
 categories: ''
-published: false
 
 ---
 
@@ -16,4 +15,4 @@ Padrão de permissão para execução das chaves SSH:
 
 Acesso pelo terminal 
 
-    ssh -i "endereço-da-chave".pem "endereço-dns-servidor"
+    ssh -i "endereço-da-chave".pem "user"@"endereço-dns-servidor"
