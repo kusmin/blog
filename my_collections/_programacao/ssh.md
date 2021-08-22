@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: SSH
-date: 
+date: 2021-08-22 6:00 AM
 description: ''
 imagem: ''
 categories: ''
