@@ -20,3 +20,7 @@ Para atualizar  os programas:
 Caso não atualize pode forçar a atualização com:
 
     sudo apt-get dist-upgrade
+
+Abrir imagem pelo terminal:
+
+    display nome_da_imagem.jpg
