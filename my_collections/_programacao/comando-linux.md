@@ -6,9 +6,17 @@ date: 2021-08-28 6:00 AM
 description: Comandos úteis para se usar no Linux
 imagem: "/uploads/linux.jpeg"
 categories: Linux
-published: false
 
 ---
-Para abir o gerenciador
+Para abir o gerenciador:
 
     sudo software-properties-gtk
+
+Para atualizar  os programas:
+
+    sudo apt-get update
+    sudo apt-get upgrade
+
+Caso não atualize pode forçar a atualização com:
+
+    sudo apt-get dist-upgrade
